@@ -87,6 +87,16 @@
                 d="M12 19H17V36H12zM14.485 17h-.028C12.965 17 12 15.888 12 14.499 12 13.08 12.995 12 14.514 12c1.521 0 2.458 1.08 2.486 2.499C17 15.887 16.035 17 14.485 17zM36 36h-5v-9.099c0-2.198-1.225-3.698-3.192-3.698-1.501 0-2.313 1.012-2.707 1.99C24.957 25.543 25 26.511 25 27v9h-5V19h5v2.616C25.721 20.5 26.85 19 29.738 19c3.578 0 6.261 2.25 6.261 7.274L36 36 36 36z">
             </path>
         </symbol>
+        <symbol id="bars-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </symbol>
+        <symbol id="x-mark" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+        </symbol>
+
+
 
 
     </svg>
@@ -183,6 +193,100 @@
         </div>
     </header>
 
+    <!-- mobile mode header -->
+    <div class="flex items-center justify-between bg-white pl-3 lg:hidden sticky top-0 z-30">
+        <div class="bg-red-500 h-16 w-16 flex justify-center items-center ">
+            <img src="images/logo.png" alt="logo site" class="w-full h-full object-cover">
+        </div>
+        <svg class="w-8 h-8 cursor-pointer " id="open-menu-mobile-btn">
+            <use href="#bars-3"></use>
+        </svg>
+    </div>
+
+    <!-- mobile menu -->
+    <div class="bg-white opacity-0 invisible delay-75 w-60 fixed z-50 top-0 bottom-0 -right-60 p-3 transition-all"
+        id="mobile-menu-wrapper">
+        <div class="flex justify-end">
+            <svg class="w-7 h-7 cursor-pointer" id="close-btn-mobile-menu">
+                <use href="#x-mark"></use>
+            </svg>
+        </div>
+        <ul>
+            <li class="flex items-center  border-b border-b-gray-100  group relative  h-20">
+                <a href="#home " class="flex items-center gap-2">
+                    <svg
+                        class="h-8 w-8  ">
+                        <use href="#home"></use>
+                    </svg>
+                    <span>خانه</span>
+
+                </a>
+            </li>
+            <li class="flex items-center  border-b border-b-gray-100  group relative  h-20">
+                <a href="#services " class="flex items-center gap-2">
+                    <svg
+                        class="h-8 w-8  ">
+                        <use href="#cog-6-tooth"></use>
+                    </svg>
+                    <span>سرویس
+                        ها</span>
+
+                </a>
+            </li>
+            <li class="flex items-center  border-b border-b-gray-100  group relative  h-20">
+                <a href="#portfolio " class="flex items-center gap-2">
+                    <svg
+                        class="h-8 w-8  ">
+                        <use href="#computer-desktop"></use>
+                    </svg>
+                    <span>نمونه
+                        کارها</span>
+
+                </a>
+            </li>
+            <li class="flex items-center  border-b border-b-gray-100  group relative  h-20">
+                <a href="#about " class="flex items-center gap-2">
+                    <svg
+                        class="h-8 w-8  ">
+                        <use href="#user"></use>
+                    </svg>
+                    <span>درباره
+                        من</span>
+
+                </a>
+            </li>
+            <li class="flex items-center  border-b border-b-gray-100  group relative  h-20">
+                <a href="#resume " class="flex items-center gap-2">
+                    <svg
+                        class="h-8 w-8  ">
+                        <use href="#document-text"></use>
+                    </svg>
+                    <span>رزومه</span>
+
+                </a>
+            </li>
+            <li class="flex items-center  border-b border-b-gray-100  group relative  h-20">
+                <a href="#contact " class="flex items-center gap-2">
+                    <svg
+                        class="h-8 w-8  ">
+                        <use href="#envelope"></use>
+                    </svg>
+                    <span>تماس
+                        با من</span>
+
+                </a>
+            </li>
+        </ul>
+        <!-- play -->
+        <div class="w-16 h-16 flex justify-center items-center bg-blue-500 text-white rounded-full mx-auto my-6 cursor-pointer relative ">
+            <div class="absolute inset-0  bg-blue-500 rounded-full -z-10 play ">
+            </div>
+            <svg class="w-7 h-7 rotate-180">
+                <use href="#play"></use>
+            </svg>
+        </div>
+    </div>
+
     <!-- main -->
     <main class="w-full lg:w-[calc(100%-110px)] lg:mr-auto ">
         <div class="container ">
@@ -202,7 +306,10 @@
                                 <div class="w-4 h-4 rounded-full bg-yellow-400"></div>
                                 <div class="w-4 h-4 rounded-full bg-green-400"></div>
                             </div>
-                            <p class="mt-5"><span>1 </span> <span class="text-yellow-400">console.</span><span class="text-blue-400">log</span><span class="text-yellow-600">( <span class="text-green-600" id="home__skill"></span> <span class="text-white type-effect">|</span> )</span> </p>
+                            <p class="mt-5"><span>1 </span> <span class="text-yellow-400">console.</span><span
+                                    class="text-blue-400">log</span><span class="text-yellow-600">( <span
+                                        class="text-green-600" id="home__skill"></span> <span
+                                        class="text-white type-effect">|</span> )</span> </p>
                         </div>
                         <a href="#"
                             class=" w-44 h-14 rounded-full text-lg flex justify-center items-center bg-blue-700 mt-10 mx-auto transition-all hover:scale-110">رزومه
@@ -252,6 +359,10 @@
     <footer>
 
     </footer>
+    <!-- blur -->
+    <div class="fixed hidden inset-0 transition-all delay-75 z-40 bg-gray-900/40 backdrop-blur-sm " id="blur-wrapper">
+
+    </div>
     <!-- scripts -->
     <script src="scripts/app.js"></script>
 </body>

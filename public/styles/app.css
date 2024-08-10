@@ -700,40 +700,62 @@ video {
   }
 }
 
+.menu-mobile::-webkit-scrollbar {
+  width: 1px;
+}
+
+/* Track */
+
+.menu-mobile::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+
+.menu-mobile::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+/* Handle on hover */
+
+.menu-mobile::-webkit-scrollbar-thumb:hover {
+  background: transparent;
+}
+
 .type-effect {
-  animation: type 1s ease-in-out  infinite;
+  animation: type 1s ease-in-out infinite;
 }
 
 @keyframes type {
-  0%{
+  0% {
     opacity: 1;
   }
 
-  100%{
+  100% {
     opacity: 0;
   }
 }
 
 .bye {
-  animation: bye 2s ease-in-out  infinite;
+  animation: bye 2s ease-in-out infinite;
 }
 
 @keyframes bye {
-  0%{
+  0% {
     transform: rotate(0deg);
   }
 
-  50%{
+  50% {
     transform: rotate(-30deg);
   }
 
-  100%{
+  100% {
     transform: rotate(0deg);
   }
 }
 
 .play {
-  animation: play 1.3s ease-in-out  infinite;
+  animation: play 1.3s ease-in-out infinite;
 }
 
 @keyframes play {
@@ -742,7 +764,7 @@ video {
     opacity: 1;
   }
 
-  50%{
+  50% {
     transform: scale(1);
     opacity: 0.5;
   }
@@ -1032,6 +1054,10 @@ video {
   overflow: hidden;
 }
 
+.overflow-y-auto {
+  overflow-y: auto;
+}
+
 .overflow-x-hidden {
   overflow-x: hidden;
 }
@@ -1059,6 +1085,11 @@ video {
 .border-b-gray-100 {
   --tw-border-opacity: 1;
   border-bottom-color: rgb(243 244 246 / var(--tw-border-opacity));
+}
+
+.bg-\[\#0E111F\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(14 17 31 / var(--tw-bg-opacity));
 }
 
 .bg-blue-500 {
@@ -1111,16 +1142,6 @@ video {
 .bg-yellow-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(250 204 21 / var(--tw-bg-opacity));
-}
-
-.bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#0E111F\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(14 17 31 / var(--tw-bg-opacity));
 }
 
 .object-cover {

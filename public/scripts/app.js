@@ -1,5 +1,6 @@
 // public
 const blurElem=document.querySelector('#blur-wrapper')
+const bodyElem=document.body
 // Type effect
 const homeTypingSkillElem = document.querySelector('#home__skill')
 const mySkills = ['\'Front-End Developer\'', '\'Html\'', '\'Css\'', '\'Javascript❤️\'']//Write the skills you want to put in the home section here
@@ -9,6 +10,8 @@ const menuMobileCloseBtn=document.querySelector('#close-btn-mobile-menu')
 const menuMobileOpenBtn=document.querySelector('#open-menu-mobile-btn')
 const menuMobileWrapper=document.querySelector('#mobile-menu-wrapper')
 const mobileMenuLinks=document.querySelectorAll('.mobile-menu-link')
+// loading
+const loadingWrapper=document.querySelector('.loading')
 
 // -----------------------------------functions
 // To apply the type effect
@@ -54,12 +57,19 @@ function closeMobileMenu(){
     menuMobileWrapper.classList.add('-right-60')
     menuMobileWrapper.classList.remove('right-0')
     blurElem.classList.add('hidden')
-    document.body.classList.remove('overflow-hidden')
+    bodyElem.remove('overflow-hidden')
+}
+
+// remove loading
+function removeLoading(){
+    loadingWrapper.classList.add('hidden')
+    bodyElem.classList.remove('overflow-hidden')
 }
 
 // -----------------------------------events
 window.addEventListener('load', () => {
     typeSkills()
+    removeLoading()
 })
 
 // menu mobile

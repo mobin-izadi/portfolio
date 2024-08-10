@@ -8,10 +8,7 @@ let countArr = 0 //Array index counter to know which index we are in
 const menuMobileCloseBtn=document.querySelector('#close-btn-mobile-menu')
 const menuMobileOpenBtn=document.querySelector('#open-menu-mobile-btn')
 const menuMobileWrapper=document.querySelector('#mobile-menu-wrapper')
-
-
-
-
+const mobileMenuLinks=document.querySelectorAll('.mobile-menu-link')
 
 // -----------------------------------functions
 // To apply the type effect
@@ -51,19 +48,22 @@ function erase(skillArr) {
     }, 200);
 }
 
+function closeMobileMenu(){
+    menuMobileWrapper.classList.add('invisible')
+    menuMobileWrapper.classList.add('opacity-0')
+    menuMobileWrapper.classList.add('-right-60')
+    menuMobileWrapper.classList.remove('right-0')
+    blurElem.classList.add('hidden')
+    document.body.classList.remove('overflow-hidden')
+}
+
 // -----------------------------------events
 window.addEventListener('load', () => {
     typeSkills()
 })
 
 // menu mobile
-menuMobileCloseBtn.addEventListener('click',()=>{
-    menuMobileWrapper.classList.add('invisible')
-    menuMobileWrapper.classList.add('opacity-0')
-    menuMobileWrapper.classList.add('-right-60')
-    menuMobileWrapper.classList.remove('right-0')
-    blurElem.classList.add('hidden')
-})
+menuMobileCloseBtn.addEventListener('click',closeMobileMenu)
 
 menuMobileOpenBtn.addEventListener('click',()=>{
   
@@ -72,4 +72,9 @@ menuMobileOpenBtn.addEventListener('click',()=>{
     menuMobileWrapper.classList.remove('-right-60')
     menuMobileWrapper.classList.add('right-0')
     blurElem.classList.remove('hidden')
+    document.body.classList.add('overflow-hidden')
+})
+
+mobileMenuLinks.forEach(link=>{
+    link.addEventListener('click',closeMobileMenu)
 })

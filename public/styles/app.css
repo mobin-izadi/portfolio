@@ -882,6 +882,11 @@ video {
   margin-bottom: 0.75rem;
 }
 
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 .mb-6 {
   margin-bottom: 1.5rem;
 }
@@ -1086,6 +1091,10 @@ video {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .overflow-x-hidden {
@@ -1450,6 +1459,11 @@ video {
     grid-column: span 2 / span 2;
   }
 
+  .md\:my-2 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
   .md\:inline-block {
     display: inline-block;
   }
@@ -1468,6 +1482,10 @@ video {
 
   .md\:gap-0 {
     gap: 0px;
+  }
+
+  .md\:text-start {
+    text-align: start;
   }
 }
 

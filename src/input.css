@@ -81,6 +81,7 @@
 }
 
 @layer components {
+  
     .type-effect {
         animation: type 1s ease-in-out  infinite;
     }

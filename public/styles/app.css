@@ -1464,6 +1464,10 @@ video {
     margin-bottom: 0.5rem;
   }
 
+  .md\:mt-16 {
+    margin-top: 4rem;
+  }
+
   .md\:inline-block {
     display: inline-block;
   }

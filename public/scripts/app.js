@@ -57,7 +57,7 @@ function closeMobileMenu(){
     menuMobileWrapper.classList.add('-right-60')
     menuMobileWrapper.classList.remove('right-0')
     blurElem.classList.add('hidden')
-    bodyElem.remove('overflow-hidden')
+    bodyElem.classList.remove('overflow-hidden')
 }
 
 // remove loading

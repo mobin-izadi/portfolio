@@ -11,10 +11,10 @@
 
 <body class="font-vazirmatn font-medium overflow-x-hidden  bg-gray-900 text-white scroll-smooth overflow-hidden">
     <!-- loading -->
-     <div class="fixed z-50 inset-0 bg-[#0E111F] flex justify-center flex-col items-center loading">
+    <div class="fixed z-50 inset-0 bg-[#0E111F] flex justify-center flex-col items-center loading">
         <img src="images/loading.gif" alt="loading gif">
         <p>لطفا کمی صبور باشید...</p>
-     </div>
+    </div>
     <!-- icons -->
     <svg class="hidden">
         <symbol id="play" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -411,9 +411,11 @@
             <!-- services -->
             <section class="py-10 my-10" id="services">
                 <div class="bg-gray-800/50 backdrop-blur-sm rounded-lg  p-3 py-20 ">
-                    <h3 class="text-center text-3xl font-bold highlight ">تخصص های من</h3>
+                    <h3 class="text-center text-3xl font-bold  ">تخصص های من</h3>
                     <div class="flex justify-center">
-                        <span class=" font-normal text-sm text-center md:text-start my-4 md:my-2 text-gray-500 relative"> تو این زمینه ها میتونید کار رو
+                        <span
+                            class=" font-normal text-sm text-center md:text-start my-4 md:my-2 text-gray-500 relative">
+                            تو این زمینه ها میتونید کار رو
                             به من
                             پسبارید و با خیال راحت پروژه اتونو تحویل بگیرید
                             <svg class="absolute top-0 -left-16 w-14 h-14 rotate-180 hidden md:inline-block">
@@ -423,36 +425,54 @@
                     </div>
                     <!-- services box wrapper -->
                     <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2 mt-8 md:mt-16">
-                        <div class="  bg-gray-900 rounded-lg px-3 py-6 col-span-1  ">
+                        <div class="  bg-gray-900 rounded-lg px-3 py-6 col-span-1 group  ">
 
-                            <svg class="w-20 h-20 mx-auto">
+                            <svg class="w-20 h-20 mx-auto transition-all group-hover:-translate-y-3">
                                 <use href="#code"></use>
                             </svg>
-                            <h4 class="text-center my-3">توسعه رابط کاربری حرفه‌ای</h4>
-                            <p class="font-normal text-gray-300">با تسلط بر HTML، CSS و JavaScript، رابط‌های کاربری زیبا
+                            <h4 class="text-center my-3 transition-all group-hover:-translate-y-3">توسعه رابط کاربری
+                                حرفه‌ای</h4>
+                            <p class="font-normal text-gray-300 transition-all group-hover:-translate-y-3">با تسلط بر
+                                HTML، CSS و JavaScript، رابط‌های کاربری زیبا
                                 و واکنش‌گرا برای وبسایت‌ها و برنامه‌های شما خلق می‌کنم. تجربه‌ای یکپارچه و جذاب برای
                                 کاربران شما تضمین شده است.</p>
                         </div>
-                        <div class="bg-gray-900 rounded-lg px-3 py-6 col-span-1 ">
-                            <svg class="w-20 h-20 mx-auto">
+                        <div class="bg-gray-900 rounded-lg px-3 py-6 col-span-1 group">
+                            <svg class="w-20 h-20 mx-auto transition-all group-hover:-translate-y-3">
                                 <use href="#rocket"></use>
                             </svg>
-                            <h4 class="text-center my-3">پیاده‌سازی و بهینه‌سازی عملکرد</h4>
-                            <p class="font-normal text-gray-300">با استفاده از بهترین فریم‌ورک‌ها و ابزارهای مدرن مانند
+                            <h4 class="text-center my-3 transition-all group-hover:-translate-y-3">پیاده‌سازی و
+                                بهینه‌سازی عملکرد</h4>
+                            <p class="font-normal text-gray-300 transition-all group-hover:-translate-y-3">با استفاده از
+                                بهترین فریم‌ورک‌ها و ابزارهای مدرن مانند
                                 React و Vue.js، عملکرد وبسایت شما را بهینه می‌کنم تا تجربه کاربری سریع و بی‌نقصی را
                                 ارائه دهید.</p>
                         </div>
-                        <div class="bg-gray-900 rounded-lg px-3 py-6 col-span-1 md:col-span-2 xl:col-span-1 ">
-                            <svg class="w-20 h-20 mx-auto">
+                        <div class="bg-gray-900 rounded-lg px-3 py-6 col-span-1 md:col-span-2 xl:col-span-1 group">
+                            <svg class="w-20 h-20 mx-auto transition-all group-hover:-translate-y-3">
                                 <use href="#respnsive"></use>
                             </svg>
-                            <h4 class="text-center my-3">طراحی سازگار با تمام دستگاه‌ها</h4>
-                            <p class="font-normal text-gray-300">صفحات وب شما را به گونه‌ای طراحی می‌کنم که در هر
+                            <h4 class="text-center my-3 transition-all group-hover:-translate-y-3">طراحی سازگار با تمام
+                                دستگاه‌ها</h4>
+                            <p class="font-normal text-gray-300 transition-all group-hover:-translate-y-3">صفحات وب شما
+                                را به گونه‌ای طراحی می‌کنم که در هر
                                 دستگاهی، از موبایل تا دسکتاپ، به طور عالی نمایش داده شود. تطبیق‌پذیری و سازگاری از
                                 اولویت‌های کاری من است.</p>
                         </div>
                     </div>
                 </div>
+            </section>
+
+            <!-- portfolio -->
+            <section class="py-10 my-10" id="portfolio">
+                <h4 class="text-center text-3xl font-bold "> کار های اخیر من</h4>
+                <!-- category -->
+                <ul class="bg-gray-800/50 h-auto max-w-96 sm:h-14 rounded-xl mx-auto my-6 flex justify-around items-center">
+                    <li class="portfolio-category "> همه</li>
+                    <li class="portfolio-category "> شخصی</li>
+                    <li class="portfolio-category "> فروشگاهی</li>
+                    <li class="portfolio-category "> شرکتی</li>
+                </ul>
             </section>
 
         </div>

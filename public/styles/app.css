@@ -700,6 +700,41 @@ video {
   }
 }
 
+.portfolio-category {
+  position: relative;
+  height: 100%;
+  width: 70px;
+  cursor: pointer;
+  border-radius: 0.75rem;
+  text-align: center;
+  line-height: 56px;
+  transition-property: all;
+  transition-delay: 75ms;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-category::before {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  right: -70px;
+  z-index: -1;
+  width: 70px;
+  border-radius: 0.75rem;
+  transition-property: all;
+  transition-delay: 75ms;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  content: '';
+}
+
+.portfolio-category:hover::before {
+  right: 0px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+}
+
 .menu-mobile::-webkit-scrollbar {
   width: 1px;
 }
@@ -953,6 +988,10 @@ video {
   height: 100px;
 }
 
+.h-auto {
+  height: auto;
+}
+
 .h-full {
   height: 100%;
 }
@@ -995,6 +1034,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.max-w-96 {
+  max-width: 24rem;
 }
 
 .max-w-\[800px\] {
@@ -1042,6 +1085,10 @@ video {
   justify-content: space-between;
 }
 
+.justify-around {
+  justify-content: space-around;
+}
+
 .gap-2 {
   gap: 0.5rem;
 }
@@ -1076,6 +1123,10 @@ video {
 
 .rounded-sm {
   border-radius: 0.125rem;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
 }
 
 .border-b {
@@ -1334,6 +1385,11 @@ video {
   left: auto;
 }
 
+.group:hover .group-hover\:-translate-y-3 {
+  --tw-translate-y: -0.75rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .group:hover .group-hover\:translate-x-8 {
   --tw-translate-x: 2rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1345,6 +1401,12 @@ video {
 
 .group:hover .group-hover\:opacity-100 {
   opacity: 1;
+}
+
+@media (min-width: 640px) {
+  .sm\:h-14 {
+    height: 3.5rem;
+  }
 }
 
 @media (min-width: 768px) {

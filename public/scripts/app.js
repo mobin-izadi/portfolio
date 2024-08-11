@@ -1,3 +1,5 @@
+import { myProject } from "./data.js"
+console.log(myProject);
 // public
 const blurElem=document.querySelector('#blur-wrapper')
 const bodyElem=document.body

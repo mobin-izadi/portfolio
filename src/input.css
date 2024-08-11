@@ -82,35 +82,14 @@
 
 @layer components {
     .portfolio-category{
-        @apply relative transition-all duration-200 delay-75 ease-in-out cursor-pointer  h-full leading-[56px] w-[70px] text-center rounded-xl  ;
+        @apply relative transition-all duration-200 delay-75 ease-in-out cursor-pointer  h-full leading-[56px] w-[70px] text-center rounded-xl shrink-0  ;
     } 
-
-    .portfolio-category::before{
-        @apply absolute  transition-all duration-200 delay-75 ease-in-out top-0 bottom-0 -right-[70px] w-[70px] -z-[1] rounded-xl ;
-        content: '';
+    .portfolio-category--active{
+        @apply bg-blue-500
     }
 
-    .portfolio-category:hover::before{
-        @apply bg-blue-500 right-0 ;
-    }
-    
-    .menu-mobile::-webkit-scrollbar {
-        width: 1px;
-    }
-
-    /* Track */
-    .menu-mobile::-webkit-scrollbar-track {
-        background: transparent;
-    }
-
-    /* Handle */
-    .menu-mobile::-webkit-scrollbar-thumb {
-        background: transparent;
-    }
-
-    /* Handle on hover */
-    .menu-mobile::-webkit-scrollbar-thumb:hover {
-        background: transparent;
+    .hidden-scroll::-webkit-scrollbar {
+       display: none;
     }
 
     .type-effect {

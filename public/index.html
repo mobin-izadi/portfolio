@@ -588,40 +588,41 @@
             </section>
 
             <!-- about me -->
-             <section class="py-10 my-10" id="about">
-                <h4 class="text-center text-3xl font-bold "> درباره من</h4>
+             <section class=" my-10 bg-gray-800/50 backdrop-blur-sm rounded-lg  p-3 py-20" id="about">
+                <h4 class="text-center text-3xl font-bold mb-4 "> درباره من</h4>
                 <!--about me wrapper  -->
-                <div>
+                <div class="flex justify-between items-center gap-5 lg:gap-0 flex-wrap lg:flex-nowrap">
                     <!-- about me content -->
-                     <div>
-                        <h5>مبین هستم برنامه نویس فرانت اند</h5>
-                        <p>
+                     <div class="basis-full lg:basis-1/3 shrink-0 xl:shrink">
+                        <h5 class="font-bold text-2xl">مبین هستم برنامه نویس فرانت اند</h5>
+                        <p class="mt-3 font-normal text-gray-300">
                              من عاشق برنامه نویسم و همین موضوع باعث این شده که هیچوقت تو این حوزه از یادگیری خسته نشم و همیشه دنبال چالش های جدیدی برای خودم باشم برنامه نویسی فقط شغل من نیست بلکه کلید دنیایی رو بهم میده که میتونم ساعت های زیادی رو اونجا باشم و لذت ببرم. به تجربه های جدید و کار تیمی هم علاقه دارم.
                         </p>
-                        <a href="#content">تماس با من</a>
-                     </div>
-                     <!-- about me image -->
-                     <div>
-                        <div>
-                            <img src="images/hero.png" alt="">
+                        <div class="flex justify-center lg:justify-end mt-3" >
+                        <a href="#content" class=" rounded-lg py-3 px-5 bg-blue-500">تماس با من</a>
                         </div>
-                        <div>
-
+                    </div>
+                     <!-- about me image -->
+                     <div class="basis-full md:basis-1/3 lg:basis-1/3 flex justify-center items-end relative">
+                        <div class="absolute bg-[#CAC6BB] bottom-0 right-0 left-0 mx-auto w-3/5 h-4/5  rounded-tr-full rounded-tl-full -z-10">
+                        </div>
+                        <div class="w-full sm:w-96">
+                            <img src="images/hero.png" alt="" class="w-full h-full object-cover">
                         </div>
                      </div>
                      <!-- about me counter -->
-                      <ul>
-                        <li>
+                      <ul class="basis-full md:basis-1/3 lg:basis-1/3  flex items-center justify-center md:justify-normal  md:flex-col gap-3 sm:gap-6 flex-wrap sm:flex-nowrap">
+                        <li class="bg-gray-900 rounded-lg  w-28 h-20 sm:h-28 flex justify-center items-center flex-col">
                             <p><span>13</span> سال </p>
-                            <p>تجربه</p>
+                            <p class="text-gray-400">تجربه</p>
                         </li>
-                        <li>
+                        <li class="bg-gray-900 rounded-lg  w-28 h-20 sm:h-28 flex justify-center items-center flex-col">
                             <p>+<span>267</span> </p>
-                            <p>مشتری</p>
+                            <p class="text-gray-400">مشتری</p>
                         </li>
-                        <li>
+                        <li class="bg-gray-900 rounded-lg  w-28 h-20 sm:h-28 flex justify-center items-center flex-col">
                             <p>%<span>98.8</span>  </p>
-                            <p>رضایت مشتری</p>
+                            <p class="text-gray-400">رضایت مشتری</p>
                         </li>
                       </ul>
                 </div>

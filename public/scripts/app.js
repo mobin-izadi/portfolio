@@ -23,6 +23,7 @@ const experienceElem = document.getElementById('experience')
 const clientElem = document.getElementById('client')
 const customerSatisfactionElem = document.getElementById('customer-satisfaction')
 let isVisitAbout = false
+let offetTopAboutMeSection=null
 
 // -----------------------------------functions
 // To apply the type effect
@@ -78,6 +79,7 @@ function removeLoading() {
 
 // portfolio
 function showProject(cateElm) {
+    
     // Before choosing a category
     if (!cateElm) {
         cateElm = document.querySelector('[data-cat="all"]')
@@ -125,9 +127,6 @@ function showProject(cateElm) {
     } else {
         portfolioWrapper.innerHTML = ` <p class="col-span-2 text-center text-red-400"> متاسفانه در این دسته بندی محصولی نمونه کاری در حال حاضر وجود ندارد</p>`
     }
-
-
-
 }
 
 // counter about
@@ -158,15 +157,18 @@ function counter(element, endCount,interval) {
 window.addEventListener('load', async () => {
     typeSkills()
     await showProject()
+    offetTopAboutMeSection=aboutMeSection.offsetTop
     removeLoading()
 
 })
 window.addEventListener('scroll', () => {
-    if (!isVisitAbout && window.scrollY >= (aboutMeSection.offsetTop - 200)) {
+    offetTopAboutMeSection=aboutMeSection.offsetTop
+    if (!isVisitAbout && window.scrollY >= (offetTopAboutMeSection -600)) {
         aboutCounter()
         isVisitAbout = !isVisitAbout
     }
 })
+
 
 // menu mobile
 menuMobileCloseBtn.addEventListener('click', closeMobileMenu)

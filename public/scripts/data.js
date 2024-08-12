@@ -35,5 +35,10 @@ let myProject = [
         category: "shop"
     }
 ]
+let aboutMeCounter={
+    experience:13,
+    client:275,
+    customerSatisfaction:99.8
+}
 
-export {myProject}
+export {myProject,aboutMeCounter}

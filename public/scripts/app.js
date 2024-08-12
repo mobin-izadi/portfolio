@@ -1,4 +1,4 @@
-import { myProject } from "./data.js"
+import { myProject, aboutMeCounter } from "./data.js"
 
 // public
 const blurElem = document.querySelector('#blur-wrapper')
@@ -15,8 +15,14 @@ const mobileMenuLinks = document.querySelectorAll('.mobile-menu-link')
 // loading
 const loadingWrapper = document.querySelector('.loading')
 // portfolio
-let portfolioCates = document.querySelectorAll('.portfolio-category')
-let portfolioWrapper = document.querySelector('#portfolio-wrapper')
+const portfolioCates = document.querySelectorAll('.portfolio-category')
+const portfolioWrapper = document.querySelector('#portfolio-wrapper')
+// about
+const aboutMeSection = document.getElementById('about')
+const experienceElem = document.getElementById('experience')
+const clientElem = document.getElementById('client')
+const customerSatisfactionElem = document.getElementById('customer-satisfaction')
+let isVisitAbout=false
 
 
 
@@ -126,11 +132,45 @@ function showProject(cateElm) {
 
 }
 
+// counter about
+function aboutCounter() {
+    experienceElem.innerHTML = ''
+    clientElem.innerHTML = ''
+    customerSatisfactionElem.innerHTML = ''
+    let data = aboutMeCounter
+    counter(experienceElem, data.experience)
+    counter(clientElem, data.client)
+    counter(customerSatisfactionElem, data.customerSatisfaction)
+}
+
+function counter(element, endCount) {
+    let index = 0
+    let counterAbout = setInterval(() => {
+        element.innerHTML = index
+        index++
+        if (index - 1 == Math.floor(endCount)) {
+            element.innerHTML = endCount
+            clearInterval(counterAbout)
+        }
+    }, 50);
+}
+
 // -----------------------------------events
 window.addEventListener('load', async () => {
     typeSkills()
     await showProject()
+    console.log(aboutMeSection.offsetTop);
     removeLoading()
+
+})
+window.addEventListener('scroll',()=>{
+    if(!isVisitAbout){
+        if(window.scrollY>aboutMeSection.offsetTop-200){
+            aboutCounter()
+        }
+        isVisitAbout= !isVisitAbout
+
+    }
 })
 
 // menu mobile

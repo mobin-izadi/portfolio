@@ -136,12 +136,12 @@ function aboutCounter() {
     clientElem.innerHTML = ''
     customerSatisfactionElem.innerHTML = ''
     let data = aboutMeCounter
-    counter(experienceElem, data.experience)
-    counter(clientElem, data.client)
-    counter(customerSatisfactionElem, data.customerSatisfaction)
+    counter(experienceElem, data.experience,300)
+    counter(clientElem, data.client,20)
+    counter(customerSatisfactionElem, data.customerSatisfaction,50)
 }
 
-function counter(element, endCount) {
+function counter(element, endCount,interval) {
     let index = 0
     let counterAbout = setInterval(() => {
         element.innerHTML = index
@@ -150,7 +150,8 @@ function counter(element, endCount) {
             element.innerHTML = endCount
             clearInterval(counterAbout)
         }
-    }, 50);
+    }, interval);
+   
 }
 
 // -----------------------------------events

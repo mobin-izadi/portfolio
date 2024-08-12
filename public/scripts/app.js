@@ -22,9 +22,7 @@ const aboutMeSection = document.getElementById('about')
 const experienceElem = document.getElementById('experience')
 const clientElem = document.getElementById('client')
 const customerSatisfactionElem = document.getElementById('customer-satisfaction')
-let isVisitAbout=false
-
-
+let isVisitAbout = false
 
 // -----------------------------------functions
 // To apply the type effect
@@ -159,17 +157,13 @@ function counter(element, endCount) {
 window.addEventListener('load', async () => {
     typeSkills()
     await showProject()
-    console.log(aboutMeSection.offsetTop);
     removeLoading()
 
 })
-window.addEventListener('scroll',()=>{
-    if(!isVisitAbout){
-        if(window.scrollY>aboutMeSection.offsetTop-200){
-            aboutCounter()
-        }
-        isVisitAbout= !isVisitAbout
-
+window.addEventListener('scroll', () => {
+    if (!isVisitAbout && window.scrollY >= (aboutMeSection.offsetTop - 200)) {
+        aboutCounter()
+        isVisitAbout = !isVisitAbout
     }
 })
 

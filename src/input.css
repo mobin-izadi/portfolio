@@ -81,6 +81,9 @@
 }
 
 @layer components {
+    .resume__item--active{
+        @apply bg-blue-500 py-4 px-3 text-white rounded-full;
+    }
     .portfolio-category{
         @apply relative transition-all duration-200 delay-75 ease-in-out cursor-pointer  h-full leading-[56px] w-[70px] text-center rounded-xl shrink-0  ;
     } 

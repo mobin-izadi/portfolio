@@ -447,7 +447,7 @@
                         </p>
                         <h1 class="text-5xl font-semibold">من مبین هستم.</h1>
                         <div class="bg-gray-600/20 p-3 rounded-sm mt-8 relative h-20 font-normal " dir="ltr">
-                            <div class="flex item gap-2 absolute top-1 left-2">
+                            <div class="flex items-center gap-2 absolute top-1 left-2">
                                 <div class="w-4 h-4 rounded-full bg-red-400"></div>
                                 <div class="w-4 h-4 rounded-full bg-yellow-400"></div>
                                 <div class="w-4 h-4 rounded-full bg-green-400"></div>
@@ -705,60 +705,79 @@
             <section class="py-10 my-10" id="resume">
                 <h4 class="text-center text-3xl font-bold "> رزومه</h4>
                 <!-- resume wrapper -->
-                <div>
+                <div class="bg-gray-800/50 backdrop-blur-sm rounded-lg  px-6 py-12 mt-20 relative">
                     <!-- resume list -->
-                    <ul>
-                        <li> اطلاعات شخصی</li>
-                        <li> مهارت ها</li>
-                        <li> تحصیلات</li>
+                    <ul
+                        class="absolute left-0 right-0 -top-10 mx-auto bg-white text-black h-20 sm:text-lg  rounded-full max-w-96 sm:max-w-[500px] hidden-scroll flex items-center justify-around">
+                        <li class=" cursor-pointer resume__item--active shrink-0 sm:shrink"> اطلاعات شخصی</li>
+                        <li class="cursor-pointer shrink-0 sm:shrink"> مهارت ها</li>
+                        <li class="cursor-pointer shrink-0 sm:shrink"> تحصیلات</li>
                     </ul>
                     <!-- Personal information -->
-                    <ul>
-                        <li> <span>نام و نام خانوادگی:</span> <span>مبین</span></li>
-                        <li> <span>تاریخ تولد:</span> <span>1 خرداد 1377</span></li>
-                        <li> <span>سن:</span> <span>26</span></li>
-                        <li> <span>شهر:</span> <span>گرگان</span></li>
-                        <li> <span>ایمیل:</span> <a href="mailto:mobinizadi@gmail.com">mobinizadi@gmail.com</a> </li>
-                        <li> <span>تلگرام:</span> <a href="https://t.me/mobinizadi_dev">@mobinizadi_dev</a> </li>
-                        <li> <span>گیت هاب:</span> <a href="https://github.com/mobin-izadi">mobin-izadi</a> </li>
+                    <ul class=" grid grid-cols-1 sm:grid-cols-2 gap-x-10 p-0 md:py-10 md:px-16 transition-all">
+                        <li class="border-b border-b-gray-700/50 py-6 flex items-center justify-between"> <span
+                                class="font-semibold text-gray-500 text-lg">نام و نام خانوادگی:</span> <span
+                                class="text-slate-400">مبین</span></li>
+                        <li class="border-b border-b-gray-700/50 py-6 flex items-center justify-between"> <span
+                                class="font-semibold text-gray-500 text-lg">تاریخ تولد:</span> <span
+                                class="text-slate-400">1 خرداد 1377</span></li>
+                        <li class="border-b border-b-gray-700/50 py-6 flex items-center justify-between"> <span
+                                class="font-semibold text-gray-500 text-lg">سن:</span> <span
+                                class="text-slate-400">26</span></li>
+                        <li class="border-b border-b-gray-700/50 py-6 flex items-center justify-between"> <span
+                                class="font-semibold text-gray-500 text-lg">شهر:</span> <span
+                                class="text-slate-400">گرگان</span></li>
+                        <li class="border-b border-b-gray-700/50 py-6 flex items-center justify-between"> <span
+                                class="font-semibold text-gray-500 text-lg">ایمیل:</span> <a
+                                href="mailto:mobinizadi.dev@gmail.com"
+                                class="text-slate-400">mobinizadi.dev@gmail.com</a> </li>
+                        <li class="border-b border-b-gray-700/50 py-6 flex items-center justify-between"> <span
+                                class="font-semibold text-gray-500 text-lg">تلگرام:</span> <a
+                                href="https://t.me/mobinizadi_dev" dir="ltr" class="text-slate-400">@mobinizadi_dev</a>
+                        </li>
+                        <li class="border-b border-b-gray-700/50 py-6 flex items-center justify-between"> <span
+                                class="font-semibold text-gray-500 text-lg">گیت هاب:</span> <a
+                                href="https://github.com/mobin-izadi" class="text-slate-400">mobin-izadi</a> </li>
                     </ul>
                     <!-- skill -->
-                    <ul>
-                        <li>
-                            <svg>
+                    <ul class="hidden grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2 mt-6 transition-all">
+                        <li class="bg-gray-900 rounded-lg flex justify-center items-center flex-col gap-2 p-6">
+                            <svg class="w-16 h-16 mx-auto">
                                 <use href="#html"></use>
                             </svg>
-                            <span>HTML</span>
-                            <span>2 سال</span>
+                            <span class="text-xl">HTML</span>
+                            <span class="text-gray-400">2 سال</span>
                         </li>
-                        <li>
-                            <svg>
+                        <li class="bg-gray-900 rounded-lg flex justify-center items-center flex-col gap-2 p-6">
+                            <svg class="w-16 h-16 mx-auto">
                                 <use href="#css"></use>
                             </svg>
-                            <span>Css</span>
-                            <span>2 سال</span>
+                            <span class="text-xl">CSS</span>
+                            <span class="text-gray-400">2 سال</span>
                         </li>
-                        <li>
-                            <svg>
+                        <li class="bg-gray-900 rounded-lg flex justify-center items-center flex-col gap-2 p-6">
+                            <svg class="w-16 h-16 mx-auto">
                                 <use href="#javascript"></use>
                             </svg>
-                            <span>Js</span>
-                            <span>1.5 سال</span>
+                            <span class="text-xl">Js</span>
+                            <span class="text-gray-400">1.5 سال</span>
                         </li>
-                        <li>
-                            <svg>
+                        <li class="bg-gray-900 rounded-lg flex justify-center items-center flex-col gap-2 p-6">
+                            <svg class="w-16 h-16 mx-auto">
                                 <use href="#tailwind"></use>
                             </svg>
-                            <span>Tailwind</span>
-                            <span>1.5 سال</span>
+                            <span class="text-xl">Tailwind</span>
+                            <span class="text-gray-400">1 سال</span>
                         </li>
                     </ul>
                     <!-- education -->
-                    <ul>
-                        <li>
+                    <ul class="hidden grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-2 mt-6 transition-all">
+                        <li
+                            class="bg-gray-900 rounded-lg flex justify-center items-center flex-col gap-2 p-6 border-r border-r-red-500 relative">
+                            <div class="w-4 h-4 rounded-full bg-green-400  absolute top-1 left-2"></div>
                             <span>مهندسی کامپیوتر</span>
-                            <span>دانشگاه آزاد اسلامی واحد گرگان</span>
-                            <span>1399-1403</span>
+                            <span class="text-sm text-gray-400">دانشگاه آزاد اسلامی واحد گرگان</span>
+                            <span class="inline-block py-1 px-2 text-sm bg-green-500 rounded-lg">1399-1403</span>
                         </li>
                     </ul>
 

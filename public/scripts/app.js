@@ -137,8 +137,8 @@ function showProject(cateElm) {
     if (targetProject.length) {
         targetProject.forEach(project => {
             portfolioWrapper.insertAdjacentHTML('beforeend', `
-                 <div class="col-span-2 md:col-span-1 bg-gray-800/50 rounded-lg p-3 overflow-hidden h-[300px] md:h-[500px] relative group ">
-                                <img src="images/portfolio/${project.image}" alt="${project.name}">
+                 <div class="col-span-2 md:col-span-1 bg-gray-800/50 rounded-lg p-3 overflow-hidden aspect-square relative group ">
+                                <img src="images/portfolio/${project.image}" loading="lazy" class="w-full h-full object-cover object-top" alt="${project.name}">
                             <div
                                 class="absolute right-0 left-0 -bottom-40 group-hover:bottom-0 transition-all duration-200 h-40  bg-gray-800/90 z-20 backdrop-blur-sm p-3 flex items-center justify-around gap-2">
                                 <div>

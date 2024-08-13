@@ -81,18 +81,28 @@
 }
 
 @layer components {
-    .resume__item--active{
+    
+    .swiper-pagination>span {
+       @apply bg-gray-300;
+    }
+    .swiper-pagination-bullet-active{
+        @apply !bg-blue-500;
+    }
+
+    .resume__item--active {
         @apply bg-blue-500 py-4 px-3 text-white rounded-full;
     }
-    .portfolio-category{
-        @apply relative transition-all duration-200 delay-75 ease-in-out cursor-pointer  h-full leading-[56px] w-[70px] text-center rounded-xl shrink-0  ;
-    } 
-    .portfolio-category--active{
+
+    .portfolio-category {
+        @apply relative transition-all duration-200 delay-75 ease-in-out cursor-pointer h-full leading-[56px] w-[70px] text-center rounded-xl shrink-0;
+    }
+
+    .portfolio-category--active {
         @apply bg-blue-500
     }
 
     .hidden-scroll::-webkit-scrollbar {
-       display: none;
+        display: none;
     }
 
     .type-effect {

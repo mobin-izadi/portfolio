@@ -27,6 +27,35 @@ let offetTopAboutMeSection=null
 // resume
 const resumeItems=document.querySelectorAll('.resume__item')
 const resumeContents=document.querySelectorAll('.resume__content')
+// Customers feedback
+var swiper = new Swiper(".customers-feedback", {
+  
+    loop: true, 
+    autoplay: {
+      delay: 3000, 
+      pauseOnMouseEnter: true,
+      
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+    
+        640: {
+          slidesPerView: 1, 
+          spaceBetween: 10,  
+        },
+        768: {
+          slidesPerView: 2, 
+          spaceBetween: 20, 
+        },
+        1536: {
+          slidesPerView: 3, 
+          spaceBetween: 30, 
+        },
+      },
+  });
 
 
 // -----------------------------------functions

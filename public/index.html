@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> سایت شخصی من</title>
     <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="package/swiper-bundle.min.css">
     <link rel="stylesheet" href="styles/app.css">
 </head>
 
@@ -705,16 +706,21 @@
             <section class="py-10 my-10" id="resume">
                 <h4 class="text-center text-3xl font-bold "> رزومه</h4>
                 <!-- resume wrapper -->
-                <div class="bg-gray-800/50 backdrop-blur-sm rounded-lg  px-6 py-12 mt-20 relative transition-all duration-200 delay-75 ">
+                <div
+                    class="bg-gray-800/50 backdrop-blur-sm rounded-lg  px-6 py-12 mt-20 relative transition-all duration-200 delay-75 ">
                     <!-- resume list -->
                     <ul
                         class="absolute left-0 right-0 -top-10 mx-auto bg-white text-black h-20 sm:text-lg  rounded-full max-w-96 sm:max-w-[500px] hidden-scroll flex items-center justify-around overflow-auto">
-                        <li class=" cursor-pointer resume__item--active shrink-0 sm:shrink resume__item transition-all duration-200 delay-75 w-36 text-center" data-cate="Personal"> اطلاعات شخصی</li>
-                        <li class="cursor-pointer shrink-0 sm:shrink resume__item transition-all duration-200 delay-75 w-36 text-center" data-cate="skills"> مهارت ها</li>
-                        <li class="cursor-pointer shrink-0 sm:shrink resume__item transition-all duration-200 delay-75 w-36 text-center" data-cate="education"> تحصیلات</li>
+                        <li class=" cursor-pointer resume__item--active shrink-0 sm:shrink resume__item transition-all duration-200 delay-75 w-36 text-center"
+                            data-cate="Personal"> اطلاعات شخصی</li>
+                        <li class="cursor-pointer shrink-0 sm:shrink resume__item transition-all duration-200 delay-75 w-36 text-center"
+                            data-cate="skills"> مهارت ها</li>
+                        <li class="cursor-pointer shrink-0 sm:shrink resume__item transition-all duration-200 delay-75 w-36 text-center"
+                            data-cate="education"> تحصیلات</li>
                     </ul>
                     <!-- Personal information -->
-                    <ul class=" grid grid-cols-1 sm:grid-cols-2 gap-x-10 p-0 md:py-10 md:px-16 transition-all duration-200 delay-75 resume__content" id="Personal">
+                    <ul class=" grid grid-cols-1 sm:grid-cols-2 gap-x-10 p-0 md:py-10 md:px-16 transition-all duration-200 delay-75 resume__content"
+                        id="Personal">
                         <li class="border-b border-b-gray-700/50 py-6 flex items-center justify-between"> <span
                                 class="font-semibold text-gray-500 text-lg">نام و نام خانوادگی:</span> <span
                                 class="text-slate-400">مبین</span></li>
@@ -740,7 +746,8 @@
                                 href="https://github.com/mobin-izadi" class="text-slate-400">mobin-izadi</a> </li>
                     </ul>
                     <!-- skill -->
-                    <ul class="hidden  grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2 mt-6 transition-all duration-200 delay-75 resume__content" id="skills">
+                    <ul class="hidden  grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2 mt-6 transition-all duration-200 delay-75 resume__content"
+                        id="skills">
                         <li class="bg-gray-900 rounded-lg flex justify-center items-center flex-col gap-2 p-6">
                             <svg class="w-16 h-16 mx-auto">
                                 <use href="#html"></use>
@@ -771,7 +778,8 @@
                         </li>
                     </ul>
                     <!-- education -->
-                    <ul class="hidden  grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-2 mt-6 transition-all duration-200 delay-75 resume__content" id="education">
+                    <ul class="hidden  grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-2 mt-6 transition-all duration-200 delay-75 resume__content"
+                        id="education">
                         <li
                             class="bg-gray-900 rounded-lg flex justify-center items-center flex-col gap-2 p-6 border-r border-r-red-500 relative">
                             <div class="w-4 h-4 rounded-full bg-green-400  absolute top-1 left-2"></div>
@@ -783,7 +791,128 @@
 
                 </div>
 
+                <!-- Customers feedback -->
+                <div class="my-32 flex justify-between gap-6 lg:gap-3 flex-wrap lg:flex-nowrap">
+                    <div class="basis-full lg:basis-1/3 shrink-0">
+                        <p class=" text-3xl font-bold ">
+                            نظرات مشتریان
+                        </p>
+                        <p class="mt-3 font-normal text-gray-300">مشتریان ما همیشه از کیفیت و خدمات ما رضایت دارند.
+                            نظرات آن‌ها گواهی بر تلاش‌های ما برای ارائه
+                            بهترین تجربه است. با خواندن نظرات دیگران، می‌توانید از تجربیات واقعی کاربران ما باخبر شوید و
+                            تصمیم بهتری بگیرید. نظرات شما نیز برای ما بسیار ارزشمند است و کمک می‌کند تا بهبود یابیم.</p>
+                    </div>
+                    <!-- Swiper -->
+                    <div class="swiper customers-feedback pb-10">
+                        <div class="swiper-wrapper ">
+                            <div class="swiper-slide ">
+                                <div class="bg-gray-800/50 backdrop-blur-sm rounded-lg px-3 py-8">
+                                    <div class="w-24 h-24 mx-auto rounded-full overflow-hidden">
+                                        <img src="images/customer/1.jpg" alt="" class="w-full h-full object-cover">
+                                    </div>
+                                    <p class="text-center my-2 text-lg  ">
+                                        محمد رضایی - مدیر فناوری اطلاعات
+                                    </p>
+                                    <p class=" font-light h-48  ">
+                                        فرانت‌اند کار فوق‌العاده‌ای داشتیم. طراحی و توسعه وب‌سایت با کیفیت و کاملاً
+                                        مطابق با نیازهای ما انجام شد. سرعت و دقت ایشان در پیاده‌سازی ایده‌ها واقعاً
+                                        تحسین‌برانگیز بود. با اطمینان می‌توانم بگویم که همکاری با ایشان ارزشمند و
+                                        نتیجه‌بخش بود.
+
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide ">
+                                <div class="bg-gray-800/50 backdrop-blur-sm rounded-lg px-3 py-8">
+                                    <div class="w-24 h-24 mx-auto rounded-full overflow-hidden">
+                                        <img src="images/customer/2.jpg" alt="" class="w-full h-full object-cover">
+                                    </div>
+                                    <p class="text-center my-2 text-lg  ">
+                                        علی صادقی، مدیر پروژه
+                                    </p>
+                                    <p class=" font-light h-48  ">
+                                        فرانت‌اند کار با دقت و مهارت بالایی پروژه ما را به نتیجه رساند. تعامل خوب و
+                                        توجه
+                                        به جزئیات، همراه با تحویل به موقع، از نکات مثبت همکاری با ایشان بود. نتیجه
+                                        نهایی
+                                        فراتر از انتظارات ما بود و مطمئناً برای پروژه‌های آینده نیز به ایشان مراجعه
+                                        خواهیم کرد.
+
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide ">
+                                <div class="bg-gray-800/50 backdrop-blur-sm rounded-lg px-3 py-8">
+                                    <div class="w-24 h-24 mx-auto rounded-full overflow-hidden">
+                                        <img src="images/customer/4.jpg" alt="" class="w-full h-full object-cover">
+                                    </div>
+                                    <p class="text-center my-2 text-lg  ">
+                                        لیلا حسینی، تحلیلگر سیستم
+                                    </p>
+                                    <p class=" font-light h-48  ">
+                                        کار فرانت‌اند فوق‌العاده‌ای انجام شد. طراحی وب‌سایت به شکلی بسیار کاربرپسند
+                                        و
+                                        خلاقانه پیاده‌سازی شد. ایشان با تسلط به تکنولوژی‌ها و فریم‌ورک‌های مختلف،
+                                        مشکلات
+                                        را به سرعت حل کردند و تجربه کاربری ما را بهبود بخشیدند. بسیار از همکاری راضی
+                                        هستیم.
+
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide ">
+                                <div class="bg-gray-800/50 backdrop-blur-sm rounded-lg px-3 py-8">
+                                    <div class="w-24 h-24 mx-auto rounded-full overflow-hidden">
+                                        <img src="images/customer/3.jpg" alt="" class="w-full h-full object-cover">
+                                    </div>
+                                    <p class="text-center my-2 text-lg  ">
+                                        حمید نیکزاد، مشاور کسب‌وکار
+                                    </p>
+                                    <p class=" font-light h-48  ">
+                                        کار با فرانت‌اند کار حرفه‌ای و با تجربه‌ای که داشتیم، بسیار مثبت بود.
+                                        طراحی‌های
+                                        زیبا و عملکرد بهینه سایت، به بهبود برند ما کمک شایانی کرد. دقت در جزئیات و
+                                        تعهد
+                                        به زمان‌بندی از نقاط قوت ایشان بود. پیشنهاد می‌کنم حتماً از خدماتشان استفاده
+                                        کنید.
+
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div class="swiper-slide ">
+                                <div class="bg-gray-800/50 backdrop-blur-sm rounded-lg px-3 py-8">
+                                    <div class="w-24 h-24 mx-auto rounded-full overflow-hidden">
+                                        <img src="images/customer/5.jpg" alt="" class="w-full h-full object-cover">
+                                    </div>
+                                    <p class="text-center my-2 text-lg  ">
+                                        سارا احمدی، مدیر بازاریابی
+                                    </p>
+                                    <p class=" font-light h-48  ">
+                                        از عملکرد فرانت‌اند کار بسیار راضی هستیم. تعامل و ارتباطات ایشان بسیار
+                                        حرفه‌ای و
+                                        پاسخگو بود. طراحی مدرن و کاربردی سایت ما به شکل فوق‌العاده‌ای ارتقا یافته و
+                                        تجربه کاربری بهبود یافته است. از همکاری با ایشان لذت بردیم و حتماً دوباره از
+                                        خدماتشان استفاده خواهیم کرد.
+
+                                    </p>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-pagination "></div>
+
+                    </div>
+              
+                </div>
+
             </section>
+
+
 
         </div>
     </main>
@@ -843,6 +972,8 @@
     <div class="fixed hidden inset-0 transition-all delay-75 z-40 bg-gray-900/40 backdrop-blur-sm " id="blur-wrapper">
 
     </div>
+    <!-- swiper -->
+    <script src="package/swiper-bundle.min.js"></script>
     <!-- scripts -->
     <script src="scripts/app.js" type="module"></script>
 </body>

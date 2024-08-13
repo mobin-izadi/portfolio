@@ -705,16 +705,16 @@
             <section class="py-10 my-10" id="resume">
                 <h4 class="text-center text-3xl font-bold "> رزومه</h4>
                 <!-- resume wrapper -->
-                <div class="bg-gray-800/50 backdrop-blur-sm rounded-lg  px-6 py-12 mt-20 relative">
+                <div class="bg-gray-800/50 backdrop-blur-sm rounded-lg  px-6 py-12 mt-20 relative transition-all duration-200 delay-75">
                     <!-- resume list -->
                     <ul
                         class="absolute left-0 right-0 -top-10 mx-auto bg-white text-black h-20 sm:text-lg  rounded-full max-w-96 sm:max-w-[500px] hidden-scroll flex items-center justify-around">
-                        <li class=" cursor-pointer resume__item--active shrink-0 sm:shrink"> اطلاعات شخصی</li>
-                        <li class="cursor-pointer shrink-0 sm:shrink"> مهارت ها</li>
-                        <li class="cursor-pointer shrink-0 sm:shrink"> تحصیلات</li>
+                        <li class=" cursor-pointer resume__item--active shrink-0 sm:shrink resume__item transition-all duration-200 delay-75 w-36 text-center" data-cate="Personal"> اطلاعات شخصی</li>
+                        <li class="cursor-pointer shrink-0 sm:shrink resume__item transition-all duration-200 delay-75 w-36 text-center" data-cate="skills"> مهارت ها</li>
+                        <li class="cursor-pointer shrink-0 sm:shrink resume__item transition-all duration-200 delay-75 w-36 text-center" data-cate="education"> تحصیلات</li>
                     </ul>
                     <!-- Personal information -->
-                    <ul class=" grid grid-cols-1 sm:grid-cols-2 gap-x-10 p-0 md:py-10 md:px-16 transition-all">
+                    <ul class=" grid grid-cols-1 sm:grid-cols-2 gap-x-10 p-0 md:py-10 md:px-16 transition-all duration-200 delay-75 resume__content" id="Personal">
                         <li class="border-b border-b-gray-700/50 py-6 flex items-center justify-between"> <span
                                 class="font-semibold text-gray-500 text-lg">نام و نام خانوادگی:</span> <span
                                 class="text-slate-400">مبین</span></li>
@@ -740,7 +740,7 @@
                                 href="https://github.com/mobin-izadi" class="text-slate-400">mobin-izadi</a> </li>
                     </ul>
                     <!-- skill -->
-                    <ul class="hidden grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2 mt-6 transition-all">
+                    <ul class="hidden  grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2 mt-6 transition-all duration-200 delay-75 resume__content" id="skills">
                         <li class="bg-gray-900 rounded-lg flex justify-center items-center flex-col gap-2 p-6">
                             <svg class="w-16 h-16 mx-auto">
                                 <use href="#html"></use>
@@ -771,7 +771,7 @@
                         </li>
                     </ul>
                     <!-- education -->
-                    <ul class="hidden grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-2 mt-6 transition-all">
+                    <ul class="hidden  grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-2 mt-6 transition-all duration-200 delay-75 resume__content" id="education">
                         <li
                             class="bg-gray-900 rounded-lg flex justify-center items-center flex-col gap-2 p-6 border-r border-r-red-500 relative">
                             <div class="w-4 h-4 rounded-full bg-green-400  absolute top-1 left-2"></div>

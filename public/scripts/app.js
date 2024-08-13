@@ -24,6 +24,10 @@ const clientElem = document.getElementById('client')
 const customerSatisfactionElem = document.getElementById('customer-satisfaction')
 let isVisitAbout = false
 let offetTopAboutMeSection=null
+// resume
+const resumeItems=document.querySelectorAll('.resume__item')
+const resumeContents=document.querySelectorAll('.resume__content')
+
 
 // -----------------------------------functions
 // To apply the type effect
@@ -139,7 +143,6 @@ function aboutCounter() {
     counter(clientElem, data.client,20)
     counter(customerSatisfactionElem, data.customerSatisfaction,50)
 }
-
 function counter(element, endCount,interval) {
     let index = 0
     let counterAbout = setInterval(() => {
@@ -151,6 +154,24 @@ function counter(element, endCount,interval) {
         }
     }, interval);
    
+}
+
+// resume
+function showHandlerResume(resumeItem){
+    resumeItems.forEach(item=>{
+        item.classList.remove('resume__item--active')
+    })
+
+    resumeItem.classList.add('resume__item--active')
+    let targetId=resumeItem.dataset.cate
+    resumeContents.forEach(content=>{
+        content.classList.add('hidden')
+        content.classList.remove('grid')
+    })
+    let targetContent= document.getElementById(targetId)
+    targetContent.classList.remove('hidden')
+    targetContent.classList.add('grid')
+    
 }
 
 // -----------------------------------events
@@ -168,7 +189,6 @@ window.addEventListener('scroll', () => {
         isVisitAbout = !isVisitAbout
     }
 })
-
 
 // menu mobile
 menuMobileCloseBtn.addEventListener('click', closeMobileMenu)
@@ -189,5 +209,12 @@ mobileMenuLinks.forEach(link => {
 portfolioCates.forEach(cate => {
     cate.addEventListener('click', event => {
         showProject(event.target)
+    })
+})
+
+// resume
+resumeItems.forEach(item=>{
+    item.addEventListener('click',event=>{
+        showHandlerResume(event.target)
     })
 })

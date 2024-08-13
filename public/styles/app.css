@@ -1197,6 +1197,10 @@ video {
        column-gap: 2.5rem;
 }
 
+.overflow-auto {
+  overflow: auto;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }

@@ -4,7 +4,9 @@
 
 
 @layer base {
-
+    input,textarea{
+        @apply border-none outline-none
+    }
     @font-face {
         font-family: Vazirmatn;
         src: url('../fonts/vazir/Vazirmatn-Thin.woff2') format('woff2');

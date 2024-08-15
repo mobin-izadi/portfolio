@@ -9,8 +9,8 @@
 <br/>
 <div align="center">
 
- [مشاهده دمو 💻](https://mobin-izadi.github.io/portfolio/public)
- [درخواست فیچر جدید ➕](https://github.com/mobin-izadi/portfolio/issues)
+ [مشاهده دمو 💻 |](https://mobin-izadi.github.io/portfolio/public)
+ [درخواست فیچر جدید ➕ |](https://github.com/mobin-izadi/portfolio/issues)
  [گزارش باگ 🤝](https://github.com/mobin-izadi/portfolio/issues)
 </div>
 
@@ -31,7 +31,7 @@
 
 🎨 استایل‌دهی با Tailwind CSS نسخه 3.4
 
-## 🚀 نصب و راه‌اندازی
+
 
 ## 🚀نصب و راه‌اندازی
 
@@ -54,6 +54,53 @@ npm install
 
 پروژه آماده استفاده است.
 
+
+## 📋 English
+<h1 align="center">Avid Template - Version 1.0.0</h1>
+<img align="center" src="public/images/readme-img.jpg"/>
+<br/>
+<br/>
+<div align="center">
+
+ [View Demo 💻 |](https://mobin-izadi.github.io/portfolio/public)
+ [Request a Feature ➕ |](https://github.com/mobin-izadi/portfolio/issues)
+ [Report a Bug 🤝](https://github.com/mobin-izadi/portfolio/issues)
+</div>
+
+<p>The Avid template is a personal portfolio template designed for showcasing work samples and resumes. With a beautiful design, it is developed to be fully responsive, providing an excellent user experience across all devices.</p>
+
+## 🛠️ Technologies Used
+- HTML
+- Tailwind CSS
+- JavaScript
+
+🔗 Libraries:
+- Swiper.js
+
+## ⚡️ Features
+🤩 Simple and user-friendly interface
+
+📱 Fully responsive
+
+🎨 Styled with Tailwind CSS version 3.4
+
+## 🚀 Installation and Setup
+
+**Clone the Repository:**
+
+First, clone the repository and navigate to the project directory:
+
+```bash
+git clone https://github.com/mobin-izadi/portfolio.git
+```
+Install Dependencies:
+
+Inside the project directory, run the following command to install the necessary dependencies:
+
+```bash
+npm install
+```
+The project is now ready to use.
 
 
 

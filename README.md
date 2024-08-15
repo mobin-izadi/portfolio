@@ -41,6 +41,7 @@
 
    ```bash
    git clone https://github.com/mobin-izadi/portfolio.git
+   cd portfolio
    ```
 
 **نصب وابستگی‌ها:**
@@ -92,6 +93,7 @@ First, clone the repository and navigate to the project directory:
 
 ```bash
 git clone https://github.com/mobin-izadi/portfolio.git
+ cd portfolio
 ```
 Install Dependencies:
 

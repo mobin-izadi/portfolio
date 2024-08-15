@@ -1,8 +1,8 @@
 ## 📄 Language
-- [Persian](#persian)
-- [English](#english)
+- [Persian](#Persian)
+- [English](#English)
 
-## 📋 Persian
+## 📋Persian
 <h1 align="center">قالب شخصی آوید - نسخه 1.0.0</h1>
 <img align="center" src="public/images/readme-img.jpg"/>
 <br/>
@@ -55,7 +55,7 @@ npm install
 پروژه آماده استفاده است.
 
 
-## 📋 English
+## 📋English
 <h1 align="center">Avid Template - Version 1.0.0</h1>
 <img align="center" src="public/images/readme-img.jpg"/>
 <br/>

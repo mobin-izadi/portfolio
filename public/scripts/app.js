@@ -57,6 +57,13 @@ var swiper = new Swiper(".customers-feedback", {
       },
   });
 
+// Animate on scroll library
+AOS.init({
+    once: false,
+    easing: 'ease'
+}
+);
+
 
 // -----------------------------------functions
 // To apply the type effect

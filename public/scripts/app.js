@@ -57,15 +57,6 @@ var swiper = new Swiper(".customers-feedback", {
       },
   });
 
-// Animate on scroll library
-AOS.init({
-    once: true,
-    easing: 'ease-in-out',
-    duration: 600,
-    dedelay: 600,
-}
-);
-
 
 // -----------------------------------functions
 // To apply the type effect
@@ -212,11 +203,23 @@ function showHandlerResume(resumeItem){
     
 }
 
+// Animate on scroll library
+function initAos(){
+    AOS.init({
+        once: true,
+        easing: 'ease-in-out',
+        duration: 600,
+      
+    }
+    );
+}
+
 // -----------------------------------events
 window.addEventListener('load', async () => {
     typeSkills()
     await showProject()
     offetTopAboutMeSection=aboutMeSection.offsetTop
+    initAos()
     removeLoading()
 
 })

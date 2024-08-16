@@ -59,8 +59,10 @@ var swiper = new Swiper(".customers-feedback", {
 
 // Animate on scroll library
 AOS.init({
-    once: false,
-    easing: 'ease'
+    once: true,
+    easing: 'ease-in-out',
+    duration: 600,
+    dedelay: 600,
 }
 );
 

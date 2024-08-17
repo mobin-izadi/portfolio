@@ -884,6 +884,10 @@ input,textarea {
   top: 0.5rem;
 }
 
+.top-20 {
+  top: 5rem;
+}
+
 .-z-10 {
   z-index: -10;
 }
@@ -1967,6 +1971,10 @@ input,textarea {
 }
 
 @media (min-width: 1024px) {
+  .lg\:top-0 {
+    top: 0px;
+  }
+
   .lg\:mr-auto {
     margin-right: auto;
   }

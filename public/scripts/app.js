@@ -23,42 +23,74 @@ const experienceElem = document.getElementById('experience')
 const clientElem = document.getElementById('client')
 const customerSatisfactionElem = document.getElementById('customer-satisfaction')
 let isVisitAbout = false
-let offetTopAboutMeSection=null
+let offetTopAboutMeSection = null
 // resume
-const resumeItems=document.querySelectorAll('.resume__item')
-const resumeContents=document.querySelectorAll('.resume__content')
+const resumeItems = document.querySelectorAll('.resume__item')
+const resumeContents = document.querySelectorAll('.resume__content')
 // Customers feedback
 var swiper = new Swiper(".customers-feedback", {
-  
-    loop: true, 
+
+    loop: true,
     autoplay: {
-      delay: 3000, 
-      pauseOnMouseEnter: true,
-      
+        delay: 3000,
+        pauseOnMouseEnter: true,
+
     },
     pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
+        el: ".swiper-pagination",
+        clickable: true,
     },
     breakpoints: {
-    
+
         640: {
-          slidesPerView: 1, 
-          spaceBetween: 10,  
+            slidesPerView: 1,
+            spaceBetween: 10,
         },
         768: {
-          slidesPerView: 2, 
-          spaceBetween: 20, 
+            slidesPerView: 2,
+            spaceBetween: 20,
         },
         1536: {
-          slidesPerView: 3, 
-          spaceBetween: 30, 
+            slidesPerView: 3,
+            spaceBetween: 30,
         },
-      },
-  });
+    },
+});
+
+// modal
+const modalWrapper = document.querySelector('.modal-wrapper')
 
 
 // -----------------------------------functions
+// modal
+function modal(massage, massageColor) {
+    let newModal = `
+    <div class="bg-gray-900 border w-72 h-36 rounded-lg p-3 relative ">
+            <svg class="w-8 h-8 close-modal-btns absolute top-1 right-1 cursor-pointer">
+                <use href="#x-mark" class="pointer-events-none"></use>
+            </svg>
+            <div class="flex justify-center items-center h-full w-full font-light  ${massageColor}">
+                ${massage}
+            </div>
+        </div>
+    `
+
+    modalWrapper.insertAdjacentHTML('afterbegin',newModal)
+
+    setEventModal()
+}
+
+function setEventModal(){
+    let closeModalBtns=document.querySelectorAll('.close-modal-btns')
+
+    closeModalBtns.forEach(btn=>{
+        btn.addEventListener('click',event=>{  
+            let modalTarget=event.target.parentElement
+            modalTarget.remove()
+        })
+    })
+}
+
 // To apply the type effect
 function typeSkills() {
     homeTypingSkillElem.innerHTML = ''
@@ -112,7 +144,7 @@ function removeLoading() {
 
 // portfolio
 function showProject(cateElm) {
-    
+
     // Before choosing a category
     if (!cateElm) {
         cateElm = document.querySelector('[data-cat="all"]')
@@ -168,11 +200,11 @@ function aboutCounter() {
     clientElem.innerHTML = ''
     customerSatisfactionElem.innerHTML = ''
     let data = aboutMeCounter
-    counter(experienceElem, data.experience,300)
-    counter(clientElem, data.client,20)
-    counter(customerSatisfactionElem, data.customerSatisfaction,50)
+    counter(experienceElem, data.experience, 300)
+    counter(clientElem, data.client, 20)
+    counter(customerSatisfactionElem, data.customerSatisfaction, 50)
 }
-function counter(element, endCount,interval) {
+function counter(element, endCount, interval) {
     let index = 0
     let counterAbout = setInterval(() => {
         element.innerHTML = index
@@ -182,34 +214,34 @@ function counter(element, endCount,interval) {
             clearInterval(counterAbout)
         }
     }, interval);
-   
+
 }
 
 // resume
-function showHandlerResume(resumeItem){
-    resumeItems.forEach(item=>{
+function showHandlerResume(resumeItem) {
+    resumeItems.forEach(item => {
         item.classList.remove('resume__item--active')
     })
 
     resumeItem.classList.add('resume__item--active')
-    let targetId=resumeItem.dataset.cate
-    resumeContents.forEach(content=>{
+    let targetId = resumeItem.dataset.cate
+    resumeContents.forEach(content => {
         content.classList.add('hidden')
         content.classList.remove('grid')
     })
-    let targetContent= document.getElementById(targetId)
+    let targetContent = document.getElementById(targetId)
     targetContent.classList.remove('hidden')
     targetContent.classList.add('grid')
-    
+
 }
 
 // Animate on scroll library
-function initAos(){
+function initAos() {
     AOS.init({
         once: true,
         easing: 'ease-in-out',
         duration: 600,
-      
+
     }
     );
 }
@@ -218,14 +250,14 @@ function initAos(){
 window.addEventListener('load', async () => {
     typeSkills()
     await showProject()
-    offetTopAboutMeSection=aboutMeSection.offsetTop
+    offetTopAboutMeSection = aboutMeSection.offsetTop
     initAos()
     removeLoading()
 
 })
 window.addEventListener('scroll', () => {
-    offetTopAboutMeSection=aboutMeSection.offsetTop
-    if (!isVisitAbout && window.scrollY >= (offetTopAboutMeSection -600)) {
+    offetTopAboutMeSection = aboutMeSection.offsetTop
+    if (!isVisitAbout && window.scrollY >= (offetTopAboutMeSection - 600)) {
         aboutCounter()
         isVisitAbout = !isVisitAbout
     }
@@ -254,8 +286,8 @@ portfolioCates.forEach(cate => {
 })
 
 // resume
-resumeItems.forEach(item=>{
-    item.addEventListener('click',event=>{
+resumeItems.forEach(item => {
+    item.addEventListener('click', event => {
         showHandlerResume(event.target)
     })
 })

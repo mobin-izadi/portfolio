@@ -800,6 +800,10 @@ input,textarea {
   }
 }
 
+.pointer-events-none {
+  pointer-events: none;
+}
+
 .visible {
   visibility: visible;
 }
@@ -886,6 +890,10 @@ input,textarea {
 
 .top-20 {
   top: 5rem;
+}
+
+.right-1 {
+  right: 0.25rem;
 }
 
 .-z-10 {

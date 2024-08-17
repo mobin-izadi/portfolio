@@ -59,13 +59,24 @@ var swiper = new Swiper(".customers-feedback", {
 
 // modal
 const modalWrapper = document.querySelector('.modal-wrapper')
+let modalCount = 0
+
+// contact
+let isValid = false
+const regexName = /^[\u0600-\u06FF\s]{3,100}$/
+const regexEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
+const regexPhone = /^09\d{9}$/
+const nameInput = document.getElementById('name-input')
+const emailInput = document.getElementById('email-input')
+const phoneInput = document.getElementById('phone-input')
+const formBtn = document.getElementById('form-btn')
 
 
 // -----------------------------------functions
 // modal
 function modal(massage, massageColor) {
     let newModal = `
-    <div class="bg-gray-900 border w-72 h-36 rounded-lg p-3 relative ">
+    <div class="bg-gray-900 border w-72 h-36 rounded-lg p-3 relative transition-all  " id="modal${modalCount}">
             <svg class="w-8 h-8 close-modal-btns absolute top-1 right-1 cursor-pointer">
                 <use href="#x-mark" class="pointer-events-none"></use>
             </svg>
@@ -75,18 +86,26 @@ function modal(massage, massageColor) {
         </div>
     `
 
-    modalWrapper.insertAdjacentHTML('afterbegin',newModal)
-
-    setEventModal()
+    modalWrapper.insertAdjacentHTML('afterbegin', newModal)
+    setEventModal(`modal${modalCount}`)
+    modalCount++
 }
 
-function setEventModal(){
-    let closeModalBtns=document.querySelectorAll('.close-modal-btns')
+function modalRemove(modalTarget) {
+    modalTarget.remove()
+}
 
-    closeModalBtns.forEach(btn=>{
-        btn.addEventListener('click',event=>{  
-            let modalTarget=event.target.parentElement
-            modalTarget.remove()
+function setEventModal(id) {
+    setTimeout(() => {
+        let modalTarget = document.getElementById(`${id}`)
+        modalRemove(modalTarget)
+    }, 3000);
+
+    let closeModalBtns = document.querySelectorAll('.close-modal-btns')
+    closeModalBtns.forEach(btn => {
+        btn.addEventListener('click', event => {
+            let modalTarget = event.target.parentElement
+            modalRemove(modalTarget)
         })
     })
 }
@@ -290,4 +309,43 @@ resumeItems.forEach(item => {
     item.addEventListener('click', event => {
         showHandlerResume(event.target)
     })
+})
+
+// contact
+nameInput.addEventListener('blur', () => {
+    let result = regexName.test(nameInput.value.trim())
+    if (!result) {
+        modal('اسم حداقل 3 کارکتر و حداکثر 100 کارکتر باید باشد.', 'text-red-500')
+        isValid = false
+    } else {
+        isValid = true
+    }
+})
+emailInput.addEventListener('blur', () => {
+    let result = regexEmail.test(emailInput.value.trim())
+    if (!result) {
+        modal('لطفا ایمیل خود را به درستی وارد کنید.', 'text-red-500')
+        isValid = false
+    } else {
+        isValid = true
+    }
+})
+phoneInput.addEventListener('blur', () => {
+    let result = regexPhone.test(phoneInput.value.trim())
+    if (!result) {
+        modal('لطفا شماره تلفن خود را به درستی وارد کنید شماره تلفن به 09 شروع میشود و 11 کارکتر است', 'text-red-500')
+        isValid = false
+    } else {
+        isValid = true
+    }
+})
+formBtn.addEventListener('click', event => {
+    event.preventDefault()
+
+    if (isValid) {
+        modal('پیام شما با موفقیت ارسال شد به زودی با شما تماس میگیرم', 'text-green-500')
+    } else {
+        modal(' لطفا تمامی فیلد ها رو به درستی پرکنید. ', 'text-green-500')
+    }
+
 })

@@ -23,6 +23,7 @@
 
 🔗 کتابخانه‌ها:
 - Swiper.js
+- AOS
 
 ## ⚡️ ویژگی‌ها
 🤩 رابط کاربری ساده و کاربرپسند
@@ -77,6 +78,7 @@ npm install
 
 🔗 Libraries:
 - Swiper.js
+- AOS
 
 ## ⚡️ Features
 🤩 Simple and user-friendly interface

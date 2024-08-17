@@ -63,12 +63,13 @@ let modalCount = 0
 
 // contact
 let isValid = false
-const regexName = /^[\u0600-\u06FF\s]{3,100}$/
+const regexName = /^[\u0600-\u06FF\s A-Z a-z]{3,100}$/
 const regexEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
 const regexPhone = /^09\d{9}$/
 const nameInput = document.getElementById('name-input')
 const emailInput = document.getElementById('email-input')
 const phoneInput = document.getElementById('phone-input')
+const massageInput = document.getElementById('massage-input')
 const formBtn = document.getElementById('form-btn')
 
 
@@ -344,8 +345,12 @@ formBtn.addEventListener('click', event => {
 
     if (isValid) {
         modal('پیام شما با موفقیت ارسال شد به زودی با شما تماس میگیرم', 'text-green-500')
+        nameInput.value=''
+        emailInput.value=''
+        phoneInput.value=''
+        massageInput.value=''
     } else {
-        modal(' لطفا تمامی فیلد ها رو به درستی پرکنید. ', 'text-green-500')
+        modal(' لطفا تمامی فیلد ها رو به درستی پرکنید. ', 'text-red-500')
     }
 
 })

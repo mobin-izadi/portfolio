@@ -16,6 +16,10 @@
 
 <p>قالب آوید یک قالب شخصی برای نمایش نمونه‌کارها و رزومه است. این قالب با طراحی زیبا به صورت کاملاً واکنش‌گرا توسعه یافته و تجربه کاربری عالی را برای تمامی دستگاه‌ها ارائه می‌دهد.</p>
 
+## 💻 صفحات قالب
+--[صفحه اصلی  |](https://mobin-izadi.github.io/portfolio/public)
+--[صفحه 404  |](https://mobin-izadi.github.io/portfolio/public/pages/404.html)
+
 ## 🛠️ تکنولوژی‌های به‌کار رفته
 - HTML
 - Tailwind CSS
@@ -70,6 +74,10 @@ npm install
 </div>
 
 <p>The Avid template is a personal portfolio template designed for showcasing work samples and resumes. With a beautiful design, it is developed to be fully responsive, providing an excellent user experience across all devices.</p>
+
+## 💻 Template Pages
+- [Home Page](https://mobin-izadi.github.io/portfolio/public)
+- [404 Page](https://mobin-izadi.github.io/portfolio/public/pages/404.html)
 
 ## 🛠️ Technologies Used
 - HTML

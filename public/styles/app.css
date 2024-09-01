@@ -840,6 +840,10 @@ input,textarea {
   bottom: -10rem;
 }
 
+.-bottom-48 {
+  bottom: -12rem;
+}
+
 .-left-16 {
   left: -4rem;
 }
@@ -850,6 +854,10 @@ input,textarea {
 
 .-top-10 {
   top: -2.5rem;
+}
+
+.-top-4 {
+  top: -1rem;
 }
 
 .bottom-0 {
@@ -894,18 +902,6 @@ input,textarea {
 
 .top-20 {
   top: 5rem;
-}
-
-.-bottom-\[180px\] {
-  bottom: -180px;
-}
-
-.-top-4 {
-  top: -1rem;
-}
-
-.-bottom-48 {
-  bottom: -12rem;
 }
 
 .-z-10 {
@@ -1013,10 +1009,6 @@ input,textarea {
 
 .mt-32 {
   margin-top: 8rem;
-}
-
-.mt-40 {
-  margin-top: 10rem;
 }
 
 .mt-5 {
@@ -1140,10 +1132,6 @@ input,textarea {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-\[590px\] {
-  height: 590px;
 }
 
 .min-h-screen {
@@ -1625,11 +1613,6 @@ input,textarea {
   line-height: 2.25rem;
 }
 
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
 .text-5xl {
   font-size: 3rem;
   line-height: 1;
@@ -1908,6 +1891,10 @@ input,textarea {
     margin-top: 3.5rem;
   }
 
+  .sm\:block {
+    display: block;
+  }
+
   .sm\:h-14 {
     height: 3.5rem;
   }
@@ -2131,20 +2118,12 @@ input,textarea {
     height: 590px;
   }
 
-  .xl\:w-\[463px\] {
-    width: 463px;
-  }
-
-  .xl\:w-\[832px\] {
-    width: 832px;
+  .xl\:w-\[365px\] {
+    width: 365px;
   }
 
   .xl\:w-\[474px\] {
     width: 474px;
-  }
-
-  .xl\:w-\[365px\] {
-    width: 365px;
   }
 
   .xl\:shrink {

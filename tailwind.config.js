@@ -21,6 +21,9 @@ module.exports = {
         extrabold: 800,
         black: 900,
       },
+      backgroundImage: {
+        '404': "url('../images/404/bg.png')",
+      },
     },
   },
   plugins: [],

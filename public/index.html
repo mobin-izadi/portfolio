@@ -458,8 +458,16 @@
 
     <!-- main -->
     <main class="w-full lg:w-[calc(100%-110px)] lg:mr-auto ">
-        <div class="container overflow-x-hidden ">
-
+        <div class="container overflow-x-hidden relative">
+            <!-- introduction video -->
+            <div class="fixed w-11/12 md:w-5/6 lg:w-4/6 aspect-video rounded-lg bg-white z-50 inset-0 m-auto p-1 sm:p-4">
+                <div class="flex justify-start mb-2 md:mb-6">
+                    <svg class="w-7 h-7 cursor-pointer text-black">
+                        <use href="#x-mark"></use>
+                    </svg>
+                </div>
+                <video src="videos/introduction.mp4" controls class="w-full h-full object-cover"></video>
+            </div>
             <!-- home -->
             <section
                 class=" relative  py-10  flex justify-center md:justify-between items-center flex-wrap md:flex-nowrap gap-8 md:gap-0 min-h-screen"

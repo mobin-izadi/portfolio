@@ -72,8 +72,18 @@ const phoneInput = document.getElementById('phone-input')
 const massageInput = document.getElementById('massage-input')
 const formBtn = document.getElementById('form-btn')
 
+// introduction-video
+const introPlayBtns = document.querySelectorAll('.play-introduction-video')
+const introVideoWrapper = document.getElementById('introduction-video')
+const introVideoCloseBtn = document.getElementById('introduction-video__close-btn')
 
 // -----------------------------------functions
+// introduction-video
+function openIntroVideo() {
+    closeMobileMenu()
+    introVideoWrapper.classList.remove('hidden')
+    blurElem.classList.remove('hidden')
+}
 // modal
 function modal(massage, massageColor) {
     let newModal = `
@@ -345,12 +355,27 @@ formBtn.addEventListener('click', event => {
 
     if (isValid) {
         modal('پیام شما با موفقیت ارسال شد به زودی با شما تماس میگیرم', 'text-green-500')
-        nameInput.value=''
-        emailInput.value=''
-        phoneInput.value=''
-        massageInput.value=''
+        nameInput.value = ''
+        emailInput.value = ''
+        phoneInput.value = ''
+        massageInput.value = ''
     } else {
         modal(' لطفا تمامی فیلد ها رو به درستی پرکنید. ', 'text-red-500')
     }
+
+})
+
+// introduction-video
+console.log(introPlayBtns);
+
+introPlayBtns.forEach(btn => {
+    console.log(btn);
+
+    btn.addEventListener('click', openIntroVideo)
+})
+
+introVideoCloseBtn.addEventListener('click', () => {
+    introVideoWrapper.classList.add('hidden')
+    blurElem.classList.add('hidden')
 
 })

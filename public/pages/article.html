@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>اسم مقاله</title>
-    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/png">
     <link rel="stylesheet" href="../styles/app.css">
 </head>
 
@@ -77,6 +77,11 @@
         </symbol>
 
     </svg>
+    <!-- loading -->
+    <div class="fixed z-50 inset-0 bg-[#0E111F] flex justify-center flex-col items-center loading">
+        <img src="../images/loading.gif" alt="loading gif">
+        <p>لطفا کمی صبور باشید...</p>
+    </div>
     <!-- header -->
     <header class=" border-b border-b-gray-600 hidden lg:block">
         <div class="container">
@@ -128,7 +133,7 @@
         </svg>
     </div>
     <!-- mobile menu -->
-    <div class="hidden bg-white text-black delay-75 w-60 fixed z-50 top-0 bottom-0 p-3 transition-all overflow-y-auto hidden-scroll right-0"
+    <div class="bg-white text-black opacity-0 invisible delay-75 w-60 fixed z-50 top-0 bottom-0 -right-60 p-3 transition-all overflow-y-auto hidden-scroll"
         id="mobile-menu-wrapper">
         <div class="flex justify-end">
             <svg class="w-7 h-7 cursor-pointer" id="close-btn-mobile-menu">
@@ -248,6 +253,11 @@
             </div>
         </div>
     </footer>
+    <!-- blur -->
+    <div class="fixed hidden inset-0 transition-all delay-75 z-40 bg-gray-900/40 backdrop-blur-sm " id="blur-wrapper">
+    </div>
+
+    <script src="../scripts/article.js" type="module"></script>
 </body>
 
 </html>

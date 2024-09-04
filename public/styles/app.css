@@ -446,7 +446,8 @@ video {
   display: none;
 }
 
-input,textarea {
+input,
+    textarea {
   border-style: none;
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -672,8 +673,8 @@ input,textarea {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding-right: 2rem;
-  padding-left: 2rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }
 
 @media (min-width: 640px) {
@@ -704,6 +705,42 @@ input,textarea {
   .container {
     max-width: 1536px;
   }
+}
+
+.article__category>li {
+  position: relative;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.article__category>li:not(:last-child)::after {
+  position: absolute;
+  top: -0.5rem;
+  left: -0.25rem;
+  display: block;
+  height: 2.25rem;
+  width: 0.25rem;
+  --tw-rotate: 45deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+  content: '';
+}
+
+.article__category>li:not(:last-child)::before {
+  position: absolute;
+  bottom: -0.5rem;
+  left: -0.25rem;
+  display: block;
+  height: 2.25rem;
+  width: 0.25rem;
+  --tw-rotate: -45deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+  content: '';
 }
 
 .swiper-pagination>span {
@@ -954,6 +991,11 @@ input,textarea {
   margin-bottom: 2.5rem;
 }
 
+.my-12 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
 .my-2 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -1021,6 +1063,13 @@ input,textarea {
 
 .mt-8 {
   margin-top: 2rem;
+}
+
+.\!line-clamp-1 {
+  overflow: hidden !important;
+  display: -webkit-box !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-line-clamp: 1 !important;
 }
 
 .line-clamp-2 {
@@ -1122,6 +1171,10 @@ input,textarea {
   height: 100px;
 }
 
+.h-\[73px\] {
+  height: 73px;
+}
+
 .h-auto {
   height: auto;
 }
@@ -1132,14 +1185,6 @@ input,textarea {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-3 {
-  height: 0.75rem;
-}
-
-.h-\[73px\] {
-  height: 73px;
 }
 
 .min-h-screen {
@@ -1222,6 +1267,10 @@ input,textarea {
   width: 100vw;
 }
 
+.min-w-\[360px\] {
+  min-width: 360px;
+}
+
 .max-w-96 {
   max-width: 24rem;
 }
@@ -1234,24 +1283,24 @@ input,textarea {
   max-width: 800px;
 }
 
-.shrink-0 {
-  flex-shrink: 0;
+.max-w-full {
+  max-width: 100%;
 }
 
-.basis-full {
-  flex-basis: 100%;
+.shrink-0 {
+  flex-shrink: 0;
 }
 
 .basis-44 {
   flex-basis: 11rem;
 }
 
-.basis-\[calac\(100\%-200px\)\] {
-  flex-basis: calac(100%-200px);
-}
-
 .basis-\[calc\(100\%-200px\)\] {
   flex-basis: calc(100% - 200px);
+}
+
+.basis-full {
+  flex-basis: 100%;
 }
 
 .rotate-180 {
@@ -1273,6 +1322,10 @@ input,textarea {
 
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.grid-cols-12 {
+  grid-template-columns: repeat(12, minmax(0, 1fr));
 }
 
 .grid-cols-2 {
@@ -1415,6 +1468,11 @@ input,textarea {
   border-bottom-color: rgb(243 244 246 / var(--tw-border-opacity));
 }
 
+.border-b-gray-600 {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(75 85 99 / var(--tw-border-opacity));
+}
+
 .border-b-gray-700\/50 {
   border-bottom-color: rgb(55 65 81 / 0.5);
 }
@@ -1422,21 +1480,6 @@ input,textarea {
 .border-r-red-500 {
   --tw-border-opacity: 1;
   border-right-color: rgb(239 68 68 / var(--tw-border-opacity));
-}
-
-.border-b-gray-400 {
-  --tw-border-opacity: 1;
-  border-bottom-color: rgb(156 163 175 / var(--tw-border-opacity));
-}
-
-.border-b-gray-500 {
-  --tw-border-opacity: 1;
-  border-bottom-color: rgb(107 114 128 / var(--tw-border-opacity));
-}
-
-.border-b-gray-600 {
-  --tw-border-opacity: 1;
-  border-bottom-color: rgb(75 85 99 / var(--tw-border-opacity));
 }
 
 .bg-\[\#051120\] {
@@ -1705,6 +1748,10 @@ input,textarea {
 
 .font-semibold {
   font-weight: 600;
+}
+
+.leading-\[48px\] {
+  line-height: 48px;
 }
 
 .text-black {

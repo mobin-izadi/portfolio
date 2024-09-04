@@ -4,9 +4,12 @@
 
 
 @layer base {
-    input,textarea{
+
+    input,
+    textarea {
         @apply border-none outline-none
     }
+
     @font-face {
         font-family: Vazirmatn;
         src: url('../fonts/vazir/Vazirmatn-Thin.woff2') format('woff2');
@@ -83,11 +86,25 @@
 }
 
 @layer components {
-    
-    .swiper-pagination>span {
-       @apply bg-gray-300;
+    .article__category>li {
+        @apply relative h-full flex justify-center items-center;
     }
-    .swiper-pagination-bullet-active{
+
+    .article__category>li:not(:last-child)::after {
+        @apply w-1 h-9 bg-gray-900 block absolute -top-2 -left-1 rotate-45;
+        content: '';
+    }
+
+    .article__category>li:not(:last-child)::before {
+        @apply w-1 h-9 bg-gray-900 block absolute -bottom-2 -left-1 -rotate-45;
+        content: '';
+    }
+
+    .swiper-pagination>span {
+        @apply bg-gray-300;
+    }
+
+    .swiper-pagination-bullet-active {
         @apply !bg-blue-500;
     }
 

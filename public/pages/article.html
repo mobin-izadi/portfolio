@@ -195,7 +195,7 @@
     <div class="container">
       <!-- article category -->
       <ul
-        class="flex gap-6 items-center bg-[#051120] min-w-[360px] max-w-full h-12 px-2 rounded-lg article__category mb-2">
+        class="flex gap-6 items-center bg-[#051120] min-w-[360px] max-w-full h-12 px-2 rounded-lg article__category mb-2 ">
         <li>
           <a href="">صفحه اصلی</a>
         </li>
@@ -204,7 +204,7 @@
           <a href="">مقالات</a>
         </li>
 
-        <li class="!line-clamp-1 leading-[48px]">عنوان مقاله</li>
+        <li class="!line-clamp-1 leading-[48px]">HTML چیست و چرا مهم است؟</li>
       </ul>
       <!-- article -->
       <section class="flex flex-col lg:flex-row gap-2">
@@ -246,7 +246,7 @@
           </div>
           <!-- content -->
           <div class="mt-4 ">
-            <h2 class="font-medium text-2xl"><a href="#html">HTML چیست و چرا مهم است؟</a></h2>
+            <h2 class="font-medium text-2xl" id="html"><a href="#html">HTML چیست و چرا مهم است؟</a></h2>
             <p class="my-2">
               HTML (HyperText Markup Language) زبان اصلی برای ساختاردهی صفحات وب است. بدون HTML، صفحات وب نمی‌توانند
               محتوایی نمایش دهند. HTML به عناصر مختلف مثل تیترها، پاراگراف‌ها، تصاویر و لینک‌ها معنا می‌بخشد و مرورگرها
@@ -258,7 +258,7 @@
               نیز ایجاد می‌کند، زیرا کاربران به راحتی می‌توانند اطلاعات مورد نظر خود را پیدا کنند.
             </p>
 
-            <h3 class="font-medium text-2xl mt-4"><a href="#css">استفاده از CSS برای زیباسازی صفحات وب</a></h3>
+            <h3 class="font-medium text-2xl mt-4" id="css"><a href="#css">استفاده از CSS برای زیباسازی صفحات وب</a></h3>
             <p class="my-2">
               CSS (Cascading Style Sheets) زبان استایل‌دهی است که به وب‌سایت‌ها جلوه‌ی بصری می‌بخشد. با CSS می‌توانیم
               رنگ‌ها، فونت‌ها، فاصله‌ها و نحوه چینش عناصر را تنظیم کنیم. بدون CSS، تمامی صفحات وب به صورت متنی ساده و
@@ -272,7 +272,7 @@
               کنیم.
             </p>
 
-            <h3 class="font-medium text-2xl mt-4"><a href="#javascript">JavaScript: روح زنده وب</a></h3>
+            <h3 class="font-medium text-2xl mt-4" id="javascript"><a href="#javascript">JavaScript: روح زنده وب</a></h3>
             <p class="my-2">
               جاوااسکریپت زبان برنامه‌نویسی است که به وب‌سایت‌ها امکان تعامل و دینامیک بودن می‌دهد. با استفاده از
               جاوااسکریپت می‌توان کارهایی مانند ایجاد انیمیشن‌ها، اعتبارسنجی فرم‌ها و حتی ایجاد بازی‌های تحت وب را انجام
@@ -284,7 +284,8 @@
               توسعه‌دهندگان اجازه می‌دهد تا صفحات وبی بسازند که نه تنها زیبا بلکه کارآمد نیز باشند.
             </p>
 
-            <h3 class="font-medium text-2xl mt-4"><a href="#ux-ui">تجربه کاربری (UX) و رابط کاربری (UI)</a></h3>
+            <h3 class="font-medium text-2xl mt-4" id="ux-ui"><a href="#ux-ui">تجربه کاربری (UX) و رابط کاربری (UI)</a>
+            </h3>
             <p class="my-2">
               UX (تجربه کاربری) و UI (رابط کاربری) دو مفهوم مهم در طراحی وب هستند که به بهبود تجربه کاربران هنگام
               استفاده
@@ -355,8 +356,49 @@
           </div>
         </div>
       </section>
+      <!-- Recent posts -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-3 w-full lg:w-4/5 border-y py-4 my-8">
+        <div class="grid-cols-1 relative aspect-video rounded-lg overflow-hidden group">
+          <img src="../images/blog/1.png" alt="تحلیل و بهینه&zwnj;سازی ساختارهای پیشرفته وب"
+            class="w-full h-full  group-hover:scale-110">
+          <div class="absolute  inset-0 mx-auto flex justify-center items-center text-xl p-3 z-20 ">
+            <h2 class="line-clamp-2 "> <a href="#">وب 3 چیست ؟ </a></h2>
+          </div>
+          <div class="absolute inset-0 bg-black/70 z-10"></div>
+          <span class="bg-blue-500 py-2 px-3 absolute top-2 left-2 rounded-full text-sm z-20 ">مقالات</span>
+          <div class="text-sm flex justify-between items-center absolute bottom-8 z-20 left-0 right-0 px-5">
+            <span><span>6</span> دقیقه</span>
+            <span><span>2</span> روز پیش</span>
+          </div>
+        </div>
+        <div class="grid-cols-1 relative aspect-video rounded-lg overflow-hidden group">
+          <img src="../images/blog/2.jpg" alt="تفاوت http و https چیست؟" class="w-full h-full  group-hover:scale-110">
+          <div class="absolute  inset-0 mx-auto flex justify-center items-center text-xl p-3 z-20 ">
+            <h2 class="line-clamp-2 "> <a href="#">تفاوت http و https چیست؟ </a></h2>
+          </div>
+          <div class="absolute inset-0 bg-black/70 z-10"></div>
+          <span class="bg-blue-500 py-2 px-3 absolute top-2 left-2 rounded-full text-sm z-20 ">مقالات</span>
+          <div class="text-sm flex justify-between items-center absolute bottom-8 z-20 left-0 right-0 px-5">
+            <span><span>6</span> دقیقه</span>
+            <span><span>2</span> روز پیش</span>
+          </div>
+        </div>
+        <div class="grid-cols-1 relative aspect-video rounded-lg overflow-hidden group">
+          <img src="../images/blog/3.png" alt="React Native چیست؟" class="w-full h-full  group-hover:scale-110">
+          <div class="absolute  inset-0 mx-auto flex justify-center items-center text-xl p-3 z-20 ">
+            <h2 class="line-clamp-2 "> <a href="#">React Native چیست؟ </a></h2>
+          </div>
+          <div class="absolute inset-0 bg-black/70 z-10"></div>
+          <span class="bg-blue-500 py-2 px-3 absolute top-2 left-2 rounded-full text-sm z-20 ">مقالات</span>
+          <div class="text-sm flex justify-between items-center absolute bottom-8 z-20 left-0 right-0 px-5">
+            <span><span>6</span> دقیقه</span>
+            <span><span>2</span> روز پیش</span>
+          </div>
+        </div>
+      </div>
+
       <!-- comments -->
-      <div class="w-full lg:w-4/5 mt-4 space-y-4 ">
+      <div class="w-full lg:w-4/5 mt-4 space-y-4  ">
         <!-- send comment -->
         <form action="" class=" flex flex-col gap-2 bg-[#051120] rounded-lg py-8 px-4 text-black">
           <div class="flex justify-between gap-2">
@@ -410,13 +452,8 @@
 
           </div>
         </div>
-
-
-
       </div>
     </div>
-
-
     </div>
   </main>
   <!-- footer -->

@@ -18,6 +18,7 @@
 
 ## 💻 صفحات قالب
 - [صفحه اصلی ](https://mobin-izadi.github.io/portfolio/public)
+- [وبلاگ ](https://mobin-izadi.github.io/portfolio/public/pages/article.html)
 - [صفحه 404 ](https://mobin-izadi.github.io/portfolio/public/pages/404.html)
 
 ## 🛠️ تکنولوژی‌های به‌کار رفته
@@ -77,6 +78,7 @@ npm install
 
 ## 💻 Template Pages
 - [Home Page](https://mobin-izadi.github.io/portfolio/public)
+- [blog ](https://mobin-izadi.github.io/portfolio/public/pages/article.html)
 - [404 Page](https://mobin-izadi.github.io/portfolio/public/pages/404.html)
 
 ## 🛠️ Technologies Used

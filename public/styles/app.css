@@ -985,34 +985,6 @@ input,
   grid-column-start: 1;
 }
 
-.col-start-10 {
-  grid-column-start: 10;
-}
-
-.col-end-10 {
-  grid-column-end: 10;
-}
-
-.col-end-13 {
-  grid-column-end: 13;
-}
-
-.col-end-9 {
-  grid-column-end: 9;
-}
-
-.row-start-1 {
-  grid-row-start: 1;
-}
-
-.row-start-2 {
-  grid-row-start: 2;
-}
-
-.row-end-3 {
-  grid-row-end: 3;
-}
-
 .m-auto {
   margin: auto;
 }
@@ -1103,6 +1075,10 @@ input,
 
 .mt-8 {
   margin-top: 2rem;
+}
+
+.mr-auto {
+  margin-right: auto;
 }
 
 .\!line-clamp-1 {
@@ -1215,10 +1191,6 @@ input,
   height: 1.75rem;
 }
 
-.h-72 {
-  height: 18rem;
-}
-
 .h-8 {
   height: 2rem;
 }
@@ -1327,6 +1299,22 @@ input,
   width: 100vw;
 }
 
+.w-11 {
+  width: 2.75rem;
+}
+
+.w-1\/2 {
+  width: 50%;
+}
+
+.w-4\/5 {
+  width: 80%;
+}
+
+.w-12 {
+  width: 3rem;
+}
+
 .min-w-\[360px\] {
   min-width: 360px;
 }
@@ -1363,10 +1351,6 @@ input,
   flex-basis: 100%;
 }
 
-.basis-1\/5 {
-  flex-basis: 20%;
-}
-
 .basis-4\/5 {
   flex-basis: 80%;
 }
@@ -1392,16 +1376,8 @@ input,
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
-.grid-cols-12 {
-  grid-template-columns: repeat(12, minmax(0, 1fr));
-}
-
 .grid-cols-2 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.grid-rows-2 {
-  grid-template-rows: repeat(2, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -1483,6 +1459,12 @@ input,
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
 }
 
+.space-y-4 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
 .overflow-auto {
   overflow: auto;
 }
@@ -1546,6 +1528,11 @@ input,
 .border-green-500 {
   --tw-border-opacity: 1;
   border-color: rgb(34 197 94 / var(--tw-border-opacity));
+}
+
+.border-green-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(74 222 128 / var(--tw-border-opacity));
 }
 
 .border-b-gray-100 {
@@ -1654,6 +1641,11 @@ input,
 .bg-yellow-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(250 204 21 / var(--tw-bg-opacity));
+}
+
+.bg-gray-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(107 114 128 / var(--tw-bg-opacity));
 }
 
 .bg-404 {
@@ -2313,12 +2305,12 @@ input,
     flex-basis: 33.333333%;
   }
 
-  .lg\:basis-4\/5 {
-    flex-basis: 80%;
-  }
-
   .lg\:basis-1\/5 {
     flex-basis: 20%;
+  }
+
+  .lg\:basis-4\/5 {
+    flex-basis: 80%;
   }
 
   .lg\:flex-row {

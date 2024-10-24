@@ -2297,6 +2297,10 @@ input,
     width: calc(100% - 110px);
   }
 
+  .lg\:w-4\/5 {
+    width: 80%;
+  }
+
   .lg\:basis-1\/2 {
     flex-basis: 50%;
   }

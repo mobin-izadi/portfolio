@@ -86,6 +86,20 @@
 }
 
 @layer components {
+    .article__category::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Track */
+    .article__category::-webkit-scrollbar-track {
+        display: none;
+    }
+
+    /* Handle */
+    .article__category::-webkit-scrollbar-thumb {
+        display: none;
+    }
+
     .article__category>li {
         @apply relative h-full flex justify-center items-center;
     }

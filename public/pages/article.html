@@ -195,7 +195,7 @@
     <div class="container">
       <!-- article category -->
       <ul
-        class="flex gap-6 items-center bg-[#051120]  max-w-full h-12 px-2 rounded-lg article__category mb-2 overflow-x-auto">
+        class="flex gap-6 items-center bg-[#051120]  max-w-full h-12 px-2 rounded-lg article__category mb-2 overflow-y-hidden overflow-x-auto">
         <li class="text-nowrap">
           <a href="">صفحه اصلی</a>
         </li>
@@ -357,45 +357,49 @@
         </div>
       </section>
       <!-- Recent posts -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-3 w-full lg:w-4/5 border-y py-4 my-8">
-        <div class="grid-cols-1 relative aspect-video rounded-lg overflow-hidden group">
-          <img src="../images/blog/1.png" alt="تحلیل و بهینه&zwnj;سازی ساختارهای پیشرفته وب"
-            class="w-full h-full  group-hover:scale-110">
-          <div class="absolute  inset-0 mx-auto flex justify-center items-center text-xl p-3 z-20 ">
-            <h2 class="line-clamp-2 "> <a href="#">وب 3 چیست ؟ </a></h2>
+      <div class="w-full lg:w-4/5  py-4 my-8">
+        <h5 class="text-2xl mb-4 underline underline-offset-8">مقالات اخیر</h5>
+        <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-3 ">
+          <div class="grid-cols-1 relative aspect-video rounded-lg overflow-hidden group">
+            <img src="../images/blog/1.png" alt="تحلیل و بهینه&zwnj;سازی ساختارهای پیشرفته وب"
+              class="w-full h-full  group-hover:scale-110">
+            <div class="absolute  inset-0 mx-auto flex justify-center items-center text-xl p-3 z-20 ">
+              <h2 class="line-clamp-2 "> <a href="#">وب 3 چیست ؟ </a></h2>
+            </div>
+            <div class="absolute inset-0 bg-black/70 z-10"></div>
+            <span class="bg-blue-500 py-2 px-3 absolute top-2 left-2 rounded-full text-sm z-20 ">مقالات</span>
+            <div class="text-sm flex justify-between items-center absolute bottom-8 z-20 left-0 right-0 px-5">
+              <span><span>6</span> دقیقه</span>
+              <span><span>2</span> روز پیش</span>
+            </div>
           </div>
-          <div class="absolute inset-0 bg-black/70 z-10"></div>
-          <span class="bg-blue-500 py-2 px-3 absolute top-2 left-2 rounded-full text-sm z-20 ">مقالات</span>
-          <div class="text-sm flex justify-between items-center absolute bottom-8 z-20 left-0 right-0 px-5">
-            <span><span>6</span> دقیقه</span>
-            <span><span>2</span> روز پیش</span>
+          <div class="grid-cols-1 relative aspect-video rounded-lg overflow-hidden group">
+            <img src="../images/blog/2.jpg" alt="تفاوت http و https چیست؟" class="w-full h-full  group-hover:scale-110">
+            <div class="absolute  inset-0 mx-auto flex justify-center items-center text-xl p-3 z-20 ">
+              <h2 class="line-clamp-2 "> <a href="#">تفاوت http و https چیست؟ </a></h2>
+            </div>
+            <div class="absolute inset-0 bg-black/70 z-10"></div>
+            <span class="bg-blue-500 py-2 px-3 absolute top-2 left-2 rounded-full text-sm z-20 ">مقالات</span>
+            <div class="text-sm flex justify-between items-center absolute bottom-8 z-20 left-0 right-0 px-5">
+              <span><span>6</span> دقیقه</span>
+              <span><span>2</span> روز پیش</span>
+            </div>
           </div>
-        </div>
-        <div class="grid-cols-1 relative aspect-video rounded-lg overflow-hidden group">
-          <img src="../images/blog/2.jpg" alt="تفاوت http و https چیست؟" class="w-full h-full  group-hover:scale-110">
-          <div class="absolute  inset-0 mx-auto flex justify-center items-center text-xl p-3 z-20 ">
-            <h2 class="line-clamp-2 "> <a href="#">تفاوت http و https چیست؟ </a></h2>
-          </div>
-          <div class="absolute inset-0 bg-black/70 z-10"></div>
-          <span class="bg-blue-500 py-2 px-3 absolute top-2 left-2 rounded-full text-sm z-20 ">مقالات</span>
-          <div class="text-sm flex justify-between items-center absolute bottom-8 z-20 left-0 right-0 px-5">
-            <span><span>6</span> دقیقه</span>
-            <span><span>2</span> روز پیش</span>
-          </div>
-        </div>
-        <div class="grid-cols-1 relative aspect-video rounded-lg overflow-hidden group">
-          <img src="../images/blog/3.png" alt="React Native چیست؟" class="w-full h-full  group-hover:scale-110">
-          <div class="absolute  inset-0 mx-auto flex justify-center items-center text-xl p-3 z-20 ">
-            <h2 class="line-clamp-2 "> <a href="#">React Native چیست؟ </a></h2>
-          </div>
-          <div class="absolute inset-0 bg-black/70 z-10"></div>
-          <span class="bg-blue-500 py-2 px-3 absolute top-2 left-2 rounded-full text-sm z-20 ">مقالات</span>
-          <div class="text-sm flex justify-between items-center absolute bottom-8 z-20 left-0 right-0 px-5">
-            <span><span>6</span> دقیقه</span>
-            <span><span>2</span> روز پیش</span>
+          <div class="grid-cols-1 relative aspect-video rounded-lg overflow-hidden group">
+            <img src="../images/blog/3.png" alt="React Native چیست؟" class="w-full h-full  group-hover:scale-110">
+            <div class="absolute  inset-0 mx-auto flex justify-center items-center text-xl p-3 z-20 ">
+              <h2 class="line-clamp-2 "> <a href="#">React Native چیست؟ </a></h2>
+            </div>
+            <div class="absolute inset-0 bg-black/70 z-10"></div>
+            <span class="bg-blue-500 py-2 px-3 absolute top-2 left-2 rounded-full text-sm z-20 ">مقالات</span>
+            <div class="text-sm flex justify-between items-center absolute bottom-8 z-20 left-0 right-0 px-5">
+              <span><span>6</span> دقیقه</span>
+              <span><span>2</span> روز پیش</span>
+            </div>
           </div>
         </div>
       </div>
+
 
       <!-- comments -->
       <div class="w-full lg:w-4/5 mt-4 space-y-4  ">

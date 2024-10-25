@@ -9,7 +9,7 @@
 <br/>
 <div align="center">
 
- [مشاهده دمو 💻 |](https://mobin-izadi.github.io/portfolio/public)
+ [مشاهده دمو 💻 |](https://mobin-izadi.github.io/portfolio/)
  [درخواست فیچر جدید ➕ |](https://github.com/mobin-izadi/portfolio/issues)
  [گزارش باگ 🤝](https://github.com/mobin-izadi/portfolio/issues)
 </div>
@@ -17,9 +17,9 @@
 <p>قالب آوید یک قالب شخصی برای نمایش نمونه‌کارها و رزومه است. این قالب با طراحی زیبا به صورت کاملاً واکنش‌گرا توسعه یافته و تجربه کاربری عالی را برای تمامی دستگاه‌ها ارائه می‌دهد.</p>
 
 ## 💻 صفحات قالب
-- [صفحه اصلی ](https://mobin-izadi.github.io/portfolio/public)
-- [وبلاگ ](https://mobin-izadi.github.io/portfolio/public/pages/article.html)
-- [صفحه 404 ](https://mobin-izadi.github.io/portfolio/public/pages/404.html)
+- [صفحه اصلی ](https://mobin-izadi.github.io/portfolio/)
+- [وبلاگ ](https://mobin-izadi.github.io/portfolio/pages/article.html)
+- [صفحه 404 ](https://mobin-izadi.github.io/portfolio/pages/404.html)
 
 ## 🛠️ تکنولوژی‌های به‌کار رفته
 - HTML
@@ -69,7 +69,7 @@ npm install
 <br/>
 <div align="center">
 
- [View Demo 💻 |](https://mobin-izadi.github.io/portfolio/public)
+ [View Demo 💻 |](https://mobin-izadi.github.io/portfolio/)
  [Request a Feature ➕ |](https://github.com/mobin-izadi/portfolio/issues)
  [Report a Bug 🤝](https://github.com/mobin-izadi/portfolio/issues)
 </div>
@@ -77,9 +77,9 @@ npm install
 <p>The Avid template is a personal portfolio template designed for showcasing work samples and resumes. With a beautiful design, it is developed to be fully responsive, providing an excellent user experience across all devices.</p>
 
 ## 💻 Template Pages
-- [Home Page](https://mobin-izadi.github.io/portfolio/public)
-- [blog ](https://mobin-izadi.github.io/portfolio/public/pages/article.html)
-- [404 Page](https://mobin-izadi.github.io/portfolio/public/pages/404.html)
+- [Home Page](https://mobin-izadi.github.io/portfolio/)
+- [blog ](https://mobin-izadi.github.io/portfolio/pages/article.html)
+- [404 Page](https://mobin-izadi.github.io/portfolio/pages/404.html)
 
 ## 🛠️ Technologies Used
 - HTML

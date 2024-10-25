@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خطای 404 |سایت شخصی</title>
+    <link rel="shortcut icon" href="../images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="../styles/app.css">
+
+</head>
+
+<body class="font-vazirmatn font-medium overflow-hidden h-screen w-screen  bg-404 text-white">
+    <!-- svg -->
+    <svg class="hidden">
+        <symbol id="arrow-left" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
+        </symbol>
+    </svg>
+
+    <main class="h-full relative flex justify-center items-center">
+        <!-- content -->
+        <div class="flex flex-col items-center">
+            <p class="text-9xl font-black text-gray-200 ">404</p>
+            <p class="text-3xl md:text-4xl text-gray-300/80">متاسفانه صفحه یافت نشد :(</p>
+            <a href="../index.html" class="flex items-center gap-2 mt-20 md:mt-40 text-xl">
+                بازگشت به صفحه اصلی
+                <svg class="w-7 h-7">
+                    <use href="#arrow-left"></use>
+                </svg>
+
+            </a>
+
+        </div>
+        <!-- images -->
+        <!-- left -->
+        <div class="hidden sm:block absolute -top-4 md:top-0 left-0 w-80 xl:w-[474px] -z-[1]">
+            <img src="../images/404/moon.png" alt="moon" class="w-full h-full object-cover">
+        </div>
+        <!-- right -->
+        <div class="hidden sm:block absolute -bottom-48 md:bottom-0 xl:top-0 right-0 w-80 xl:w-[365px] xl:h-[590px] -z-[1]">
+            <img src="../images/404/right.png" alt="moon" class="w-full h-full object-cover">
+        </div>
+    </main>
+</body>
+
+</html>
